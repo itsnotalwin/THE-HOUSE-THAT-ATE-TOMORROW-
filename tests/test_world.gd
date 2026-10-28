@@ -38,6 +38,15 @@ func run() -> void:
 		print(room + ": target selection checked")
 	world.load_room("hall", Vector2(256, 300), false, false)
 	await physics_frame
+	var chandelier: Sprite2D = world.get_node("AuthoredRoom/Ceiling/chandelier")
+	world.player.position = world.get_target_position("portrait")
+	await process_frame
+	await process_frame
+	check(chandelier.modulate.a < 0.5, "Chandelier obscures the Visitor at the portrait")
+	world.player.position = Vector2(256, 300)
+	await process_frame
+	await process_frame
+	check(is_equal_approx(chandelier.modulate.a, 1.0), "Chandelier remains faded away from Visitor")
 	world.player.position = world.get_target_position("notice")
 	await physics_frame
 	check(world.get_target_id() != "notice", "Notice available before puzzle solution")

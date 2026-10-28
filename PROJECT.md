@@ -11,6 +11,8 @@ The user approved the original art package with “YEAH NOT BAD AT ALL ART APPRO
 
 The Godot 4.6.3 project now implements the Street and Entrance Hall, Visitor movement and collision, Fig conversations, the pocket mirror and The Almost, the Guestbook puzzle, first warning notice, and an explicit chapter-end panel at the newly opened doors. It includes a notebook, inventory, graduated hints, settings, autosave/Continue, title/pause/credits UI, and original synthesized music and effects.
 
+The Visitor now has long dark hair and matching dialogue portraits, as requested on 28 October 2026. The visual revision and source are recorded in `assets/VISITOR_PROVENANCE.md`; the approved staging sprite remains preserved. The interface adds framed menus, clearer dialogue actions and notebook presentation, and the hall chandelier fades when it overlaps the player.
+
 The world renders at 384×216 with nearest filtering; text and controls use a separate 1152×648 UI reference canvas. The hall uses approved 16×16 tiles and 24×32 Visitor animation cells. The street background and audio are new implementation assets with reproducible source under `tools/`.
 
 ## Verification and next milestone

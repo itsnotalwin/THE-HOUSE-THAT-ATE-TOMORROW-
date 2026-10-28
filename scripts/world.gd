@@ -28,6 +28,7 @@ var _camera: Camera2D
 var _notice: Polygon2D
 var _door_markers: Array[Polygon2D] = []
 var _mode_sprites: Array[Sprite2D] = []
+var _ceiling_sprites: Array[Sprite2D] = []
 var _almost_objects: Array[Node2D] = []
 var _facing: Vector2 = Vector2.DOWN
 var _direction_row: int = 0
@@ -52,6 +53,7 @@ func load_room(room_id: String, spawn: Vector2, almost: bool, solved: bool) -> v
 		remove_child(_room_root)
 		_room_root.queue_free()
 	_mode_sprites.clear()
+	_ceiling_sprites.clear()
 	_almost_objects.clear()
 	_door_markers.clear()
 	_notice = null
@@ -116,6 +118,7 @@ func _build_hall() -> void:
 		elif layer == "ceiling":
 			sprite.position = top_left
 			_ceiling.add_child(sprite)
+			_ceiling_sprites.append(sprite)
 		else:
 			var baseline: float = top_left.y + native_size.y
 			if asset_name == "guestbook":
@@ -279,6 +282,7 @@ func _physics_process(delta: float) -> void:
 
 
 func _process(delta: float) -> void:
+	_update_ceiling_visibility()
 	if not is_instance_valid(_fig_sprite) or not _enabled:
 		return
 	_ambient_time += delta
@@ -286,6 +290,15 @@ func _process(delta: float) -> void:
 	_fig_sprite.frame = 1 if cycle > 5.2 and cycle < 5.34 else (2 if cycle > 3.6 and cycle < 4.0 else 0)
 	if current_room == "street" and not reduced_motion:
 		queue_redraw()
+
+
+func _update_ceiling_visibility() -> void:
+	if not is_instance_valid(player):
+		return
+	var visitor_bounds := Rect2(player.position + Vector2(-12, -30), Vector2(24, 32))
+	for sprite: Sprite2D in _ceiling_sprites:
+		var overlaps: bool = Rect2(sprite.position, sprite.region_rect.size).intersects(visitor_bounds)
+		sprite.modulate.a = 0.22 if overlaps else 1.0
 
 
 func _draw() -> void:

@@ -2,7 +2,7 @@
 
 *Tomorrow is missing. The cat denies everything.*
 
-A cozy-gothic narrative puzzle adventure about a house that collects things that almost happened. The first playable Godot chapter covers the **Forgotten Street and Entrance Hall**: meet Fig, acquire the pocket mirror, explore The Almost, solve the Guestbook puzzle, and discover the first warning notice.
+A cozy-gothic narrative puzzle adventure about a house that collects things that almost happened. The first playable Godot chapter covers the **Forgotten Street and Entrance Hall**: play as a dark-haired Visitor, meet Fig, acquire the pocket mirror, explore The Almost, solve the Guestbook puzzle, and discover the first warning notice.
 
 The user approved the original artwork on 27 October 2026. [Art approval](ART_APPROVAL_RECORD.md) records that decision and the authorized slice scope. The selected Candlelit Registry hall now runs in-game; the remaining rooms await separate slice acceptance.
 
@@ -36,7 +36,7 @@ Dialogue waits for you. Settings include standard/large reading text, reduced am
 
 ## Review evidence and source
 
-Start with the [slice review](SLICE_REVIEW.md), [actual title screenshot](qa/runtime/01-title.png), and [actual street screenshot](qa/runtime/02-street.png). Runtime evidence lives under `qa/`; the earlier illustrations and UI studies remain under `art_staging/review/`.
+Start with the [slice review](SLICE_REVIEW.md), [actual title screenshot](qa/runtime/31-visual-title.png), and [Visitor dialogue screenshot](qa/runtime/33-visitor-dialogue.png). Runtime evidence lives under `qa/`; the earlier illustrations and UI studies remain under `art_staging/review/`.
 
 | Path | Contents |
 | --- | --- |

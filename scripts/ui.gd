@@ -48,8 +48,13 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if _toast_remaining > 0.0:
-		_toast_remaining = maxf(0.0, _toast_remaining - delta)
-		_toast_panel.visible = _toast_remaining > 0.0
+		# Keep notices readable without covering an open book or conversation.
+		# Their timer resumes when the player returns to exploration.
+		var panel_open: bool = _modal.visible or _dialogue.visible
+		_toast_panel.visible = not panel_open
+		if not panel_open:
+			_toast_remaining = maxf(0.0, _toast_remaining - delta)
+			_toast_panel.visible = _toast_remaining > 0.0
 
 
 func _unhandled_key_input(event: InputEvent) -> void:
@@ -95,6 +100,22 @@ func _ensure_built() -> void:
 	skin.set_stylebox("focus", "CheckBox", focus)
 	skin.set_stylebox("focus", "HSlider", focus)
 	skin.set_stylebox("panel", "PanelContainer", _texture_style("dialogue_panel.png"))
+	# The notebook's scroll thumb belongs to the same rose-and-plum palette
+	# as its headings and keyboard focus, including its active states.
+	var scroll_track := StyleBoxFlat.new()
+	scroll_track.bg_color = Color("1c1226")
+	scroll_track.set_corner_radius_all(3)
+	var scroll_thumb := StyleBoxFlat.new()
+	scroll_thumb.bg_color = Color("b66d8c")
+	scroll_thumb.set_corner_radius_all(3)
+	var scroll_active := StyleBoxFlat.new()
+	scroll_active.bg_color = BLUSH
+	scroll_active.set_corner_radius_all(3)
+	skin.set_stylebox("scroll", "VScrollBar", scroll_track)
+	skin.set_stylebox("scroll_focus", "VScrollBar", scroll_track)
+	skin.set_stylebox("grabber", "VScrollBar", scroll_thumb)
+	skin.set_stylebox("grabber_highlight", "VScrollBar", scroll_active)
+	skin.set_stylebox("grabber_pressed", "VScrollBar", scroll_active)
 	theme = skin
 	_build_title()
 	_build_hud()
@@ -237,6 +258,19 @@ func _build_title() -> void:
 	tagline.position = Vector2(44, 335)
 	tagline.size = Vector2(466, 56)
 	tagline.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	# A quiet framed inset gathers the menu over the illustrated doorway
+	# without changing the position or hit area of any control.
+	var menu_frame := Panel.new()
+	menu_frame.position = Vector2(139, 399)
+	menu_frame.size = Vector2(276, 237)
+	menu_frame.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	var frame_style := StyleBoxFlat.new()
+	frame_style.bg_color = Color(0.10, 0.055, 0.14, 0.82)
+	frame_style.border_color = Color(0.72, 0.38, 0.45, 0.75)
+	frame_style.set_border_width_all(1)
+	frame_style.set_corner_radius_all(4)
+	menu_frame.add_theme_stylebox_override("panel", frame_style)
+	_title.add_child(menu_frame)
 	var menu := VBoxContainer.new()
 	menu.name = "TitleActions"
 	_title.add_child(menu)
@@ -257,9 +291,21 @@ func _build_hud() -> void:
 	objective_panel.position = Vector2(24, 20)
 	objective_panel.size = Vector2(765, 54)
 	objective_panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	var objective_row := HBoxContainer.new()
+	objective_row.add_theme_constant_override("separation", 10)
+	objective_panel.add_child(objective_row)
+	var journal_icon := TextureRect.new()
+	journal_icon.texture = _texture("icon_notebook.png")
+	journal_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	journal_icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	journal_icon.custom_minimum_size = Vector2(24, 24)
+	journal_icon.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	journal_icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	objective_row.add_child(journal_icon)
 	_objective = _label("", 20)
+	_objective.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_objective.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
-	objective_panel.add_child(_objective)
+	objective_row.add_child(_objective)
 	var mode_panel := PanelContainer.new()
 	_hud.add_child(mode_panel)
 	mode_panel.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT)
@@ -396,6 +442,7 @@ func show_dialogue(speaker: String, text: String, choices: Array = [], portrait:
 	_modal.visible = false
 	_hud.visible = true
 	_dialogue.visible = true
+	_toast_panel.visible = false
 	_prompt_panel.visible = false
 	_dialogue_choices = choices.duplicate(true)
 	_current_panel = "dialogue"
@@ -403,7 +450,8 @@ func show_dialogue(speaker: String, text: String, choices: Array = [], portrait:
 	var row := HBoxContainer.new()
 	row.add_theme_constant_override("separation", 22)
 	_dialogue_content.add_child(row)
-	if speaker.to_lower() == "fig":
+	var portrait_speaker: String = speaker.to_lower()
+	if portrait_speaker in ["fig", "visitor"]:
 		var portrait_box := Control.new()
 		portrait_box.custom_minimum_size = Vector2(128, 128)
 		portrait_box.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -416,7 +464,7 @@ func show_dialogue(speaker: String, text: String, choices: Array = [], portrait:
 		frame.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		var face := TextureRect.new()
 		var atlas := AtlasTexture.new()
-		atlas.atlas = _texture("fig_portraits.png")
+		atlas.atlas = _texture("fig_portraits.png" if portrait_speaker == "fig" else "visitor_portraits.png")
 		atlas.region = Rect2(clampi(portrait, 0, 2) * 64, 0, 64, 64)
 		face.texture = atlas
 		face.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
@@ -437,6 +485,10 @@ func show_dialogue(speaker: String, text: String, choices: Array = [], portrait:
 	var first: Button = null
 	if choices.is_empty():
 		_dialogue_continue = _button("Continue  ·  E / Enter", func() -> void: dialogue_advanced.emit())
+		# Keep the action legible without stretching it across the entire page.
+		actions.alignment = BoxContainer.ALIGNMENT_END
+		_dialogue_continue.custom_minimum_size.x = 230
+		_dialogue_continue.size_flags_horizontal = Control.SIZE_SHRINK_END
 		actions.add_child(_dialogue_continue)
 		first = _dialogue_continue
 	else:
@@ -464,6 +516,7 @@ func close_dialogue() -> void:
 func _card(title: String, width: float = 720.0) -> VBoxContainer:
 	_ensure_built()
 	_modal.visible = true
+	_toast_panel.visible = false
 	_dialogue.visible = false
 	_clear(_modal_center)
 	var panel := PanelContainer.new()
@@ -654,7 +707,7 @@ func toast(text: String) -> void:
 	_ensure_built()
 	_toast_label.text = text
 	_toast_remaining = 3.6
-	_toast_panel.visible = true
+	_toast_panel.visible = not (_modal.visible or _dialogue.visible)
 
 
 func hide_panels() -> void:
