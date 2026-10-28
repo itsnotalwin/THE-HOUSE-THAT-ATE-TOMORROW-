@@ -1,0 +1,46 @@
+{
+  "asset": "title_wordmark",
+  "status": "ART_REVIEW_UNAPPROVED",
+  "classification": "high-resolution editable branding, not a native pixel sprite",
+  "native_dimensions": [
+    1000,
+    420
+  ],
+  "format": "RGBA PNG + editable text SVG + portable outlined SVG",
+  "alpha": "straight alpha, antialiased edges; transparent canvas",
+  "source": "../source/draw_branding.py",
+  "filter": "smooth downsampling for typography; not nearest-neighbor pixel art",
+  "layers": [
+    "original vector ornaments",
+    "editable font-backed text"
+  ],
+  "text_lines": [
+    {
+      "text": "The House",
+      "font": "fonts/DejaVuSerif-Bold.ttf",
+      "font_size": 103,
+      "baseline_y": 148,
+      "width": 617.3462,
+      "x": 191.3269
+    },
+    {
+      "text": "That Ate",
+      "font": "fonts/DejaVuSerif-Bold.ttf",
+      "font_size": 88,
+      "baseline_y": 243,
+      "width": 422.6836,
+      "x": 288.6582
+    },
+    {
+      "text": "Tomorrow",
+      "font": "fonts/DejaVuSerif-Bold.ttf",
+      "font_size": 119,
+      "baseline_y": 354,
+      "width": 680.415,
+      "x": 159.7925
+    }
+  ],
+  "fonts": "fonts/; unchanged DejaVu files with LICENSE-DejaVu.txt",
+  "provenance": "Original layout and ornaments authored for this project; lettering uses licensed DejaVu typefaces. No generative text or cropped reference art.",
+  "approval": "Human approval not recorded"
+}

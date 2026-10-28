@@ -1,0 +1,19 @@
+# Local operating-system and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Godot-generated local cache, if a project is introduced later
+.godot/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Local build products and Python caches
+/builds/
+__pycache__/
+*.pyc

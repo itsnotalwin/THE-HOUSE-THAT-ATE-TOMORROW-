@@ -1,0 +1,46 @@
+{
+  "asset": "miss_thimble_concept.png",
+  "native_dimensions": [
+    24,
+    32
+  ],
+  "mode": "RGBA",
+  "alpha": "binary 0 or 255; transparent pixels are (0,0,0,0)",
+  "cell_px": [
+    24,
+    32
+  ],
+  "columns": 1,
+  "rows": 1,
+  "frame_count": 1,
+  "frames": [
+    {
+      "name": "neutral_front",
+      "cell": [
+        0,
+        0
+      ],
+      "rect_px": [
+        0,
+        0,
+        24,
+        32
+      ]
+    }
+  ],
+  "foot_anchor_px": [
+    12,
+    30
+  ],
+  "coordinate_convention": "top-left; x right, y down; anchor is pixel boundary below feet",
+  "filter": "nearest",
+  "palette": "../palette.json",
+  "status": "STATIC_CONCEPT_REVIEW_REQUIRED",
+  "provenance": {
+    "creator": "Codex, original coordinate-authored pixel drawings for this project",
+    "source": "../source/draw_characters.py",
+    "external_art": "none; no reference pixels sampled",
+    "rights": "New original project artwork; no third-party sprite assets used; no blanket public license assigned."
+  },
+  "notes": "Single original neutral pose for scale and silhouette review. Not a complete animation/directional set."
+}

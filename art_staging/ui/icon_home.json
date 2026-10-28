@@ -1,0 +1,23 @@
+{
+  "asset": "icon_home.png",
+  "native_dimensions": [
+    24,
+    24
+  ],
+  "mode": "RGBA",
+  "palette": "../palette.json",
+  "alpha": "0 or255, straight alpha",
+  "filter": "nearest",
+  "status": "ART_REVIEW_REQUIRED",
+  "source": "../source/draw_ui.py",
+  "provenance": "Original coordinate-authored UI graphics for this project; no third-party artwork sampled.",
+  "cell_px": [
+    24,
+    24
+  ],
+  "frame_count": 1,
+  "anchor_px": [
+    12,
+    12
+  ]
+}

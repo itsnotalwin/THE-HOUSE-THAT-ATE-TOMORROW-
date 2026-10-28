@@ -1,0 +1,261 @@
+{
+  "native_assets": [
+    {
+      "file": "button_disabled.png",
+      "dimensions": [
+        48,
+        32
+      ],
+      "rgba": true,
+      "alpha": [
+        0,
+        255
+      ],
+      "exact_palette": true,
+      "sha256": "751f7837a3fc1f50a7094f303f1f727e4f80fc7081929454a3931952ae213dcd"
+    },
+    {
+      "file": "button_focused.png",
+      "dimensions": [
+        48,
+        32
+      ],
+      "rgba": true,
+      "alpha": [
+        0,
+        255
+      ],
+      "exact_palette": true,
+      "sha256": "29293edad7d17299fb41fd98dc1e64bed0a0b221c24be687937ebb22d33b6269"
+    },
+    {
+      "file": "button_normal.png",
+      "dimensions": [
+        48,
+        32
+      ],
+      "rgba": true,
+      "alpha": [
+        0,
+        255
+      ],
+      "exact_palette": true,
+      "sha256": "ab20c8c1897aea7bccf3fff2523009a87f2faa6cb50f0cc894e59f663ff7b2d6"
+    },
+    {
+      "file": "dialogue_panel.png",
+      "dimensions": [
+        48,
+        48
+      ],
+      "rgba": true,
+      "alpha": [
+        0,
+        255
+      ],
+      "exact_palette": true,
+      "sha256": "6a146c48ea6cd9b24beae3c4b9a520665f89c4b887a68f08a8ac1f5cd8cd0ea8"
+    },
+    {
+      "file": "icon_book.png",
+      "dimensions": [
+        24,
+        24
+      ],
+      "rgba": true,
+      "alpha": [
+        0,
+        255
+      ],
+      "exact_palette": true,
+      "sha256": "cf699f8a794e632e7eefa8c5fdc921f23d02028469452af707b99165376a332c"
+    },
+    {
+      "file": "icon_focus_arrow.png",
+      "dimensions": [
+        24,
+        24
+      ],
+      "rgba": true,
+      "alpha": [
+        0,
+        255
+      ],
+      "exact_palette": true,
+      "sha256": "739e628a91696d17be3463f9aca1a348df9cdc2fe868b6f342f1192edc0d2d38"
+    },
+    {
+      "file": "icon_gear.png",
+      "dimensions": [
+        24,
+        24
+      ],
+      "rgba": true,
+      "alpha": [
+        0,
+        255
+      ],
+      "exact_palette": true,
+      "sha256": "992f7953dfbc89cd1aa0141ac79d982a59cc5e1e4ab7a44b380cd1b7c05e1fc9"
+    },
+    {
+      "file": "icon_home.png",
+      "dimensions": [
+        24,
+        24
+      ],
+      "rgba": true,
+      "alpha": [
+        0,
+        255
+      ],
+      "exact_palette": true,
+      "sha256": "0d8214737815780492ef93d2c95207eacd63d0107e32c3fbe739a7643b78cc04"
+    },
+    {
+      "file": "icon_key.png",
+      "dimensions": [
+        24,
+        24
+      ],
+      "rgba": true,
+      "alpha": [
+        0,
+        255
+      ],
+      "exact_palette": true,
+      "sha256": "c748299aa318d52418be96a89c15e00d599c0ea79a9c65973b4fe270bee1b4c1"
+    },
+    {
+      "file": "icon_letter.png",
+      "dimensions": [
+        24,
+        24
+      ],
+      "rgba": true,
+      "alpha": [
+        0,
+        255
+      ],
+      "exact_palette": true,
+      "sha256": "822bdd23da099eaaf2bad8b48221b391829efe2000f615638fad83ad3d9f1229"
+    },
+    {
+      "file": "icon_mirror.png",
+      "dimensions": [
+        24,
+        24
+      ],
+      "rgba": true,
+      "alpha": [
+        0,
+        255
+      ],
+      "exact_palette": true,
+      "sha256": "ebfeffc22190f380a76ca1f802b4dee7c0ea7ade0d7d333f36e5ef72710a7085"
+    },
+    {
+      "file": "icon_moon.png",
+      "dimensions": [
+        24,
+        24
+      ],
+      "rgba": true,
+      "alpha": [
+        0,
+        255
+      ],
+      "exact_palette": true,
+      "sha256": "8bb68946dd0d32e3571d0d08091e269f72a7dd8a994f0dc9d49459500a6ed859"
+    },
+    {
+      "file": "icon_notebook.png",
+      "dimensions": [
+        24,
+        24
+      ],
+      "rgba": true,
+      "alpha": [
+        0,
+        255
+      ],
+      "exact_palette": true,
+      "sha256": "e16c5fe16df4453bd150db446c25c35de4a8a760111bf313a2eab12b12d77dd7"
+    },
+    {
+      "file": "icon_sun.png",
+      "dimensions": [
+        24,
+        24
+      ],
+      "rgba": true,
+      "alpha": [
+        0,
+        255
+      ],
+      "exact_palette": true,
+      "sha256": "7d0b8a8684df248666ac2631391d548f1861dc4ad3d755082af8dfc52a474943"
+    },
+    {
+      "file": "icon_tea.png",
+      "dimensions": [
+        24,
+        24
+      ],
+      "rgba": true,
+      "alpha": [
+        0,
+        255
+      ],
+      "exact_palette": true,
+      "sha256": "c237918dc510a37c355a96bfefdd627e0d79787cce0f39f9ba7edd947a4133c2"
+    },
+    {
+      "file": "icons_sheet.png",
+      "dimensions": [
+        240,
+        24
+      ],
+      "rgba": true,
+      "alpha": [
+        0,
+        255
+      ],
+      "exact_palette": true,
+      "sha256": "5bead44f9ec61b3da66f0df8426b5e3b359c6039c0f501a7bf3829f1940877c0"
+    },
+    {
+      "file": "portrait_frame.png",
+      "dimensions": [
+        80,
+        80
+      ],
+      "rgba": true,
+      "alpha": [
+        0,
+        255
+      ],
+      "exact_palette": true,
+      "sha256": "d4aa0d3d86275a9fabf25474f7cb597b496b79d1c711aadb573b642c70e2fee6"
+    }
+  ],
+  "contrast_ratios": {
+    "paper_on_deep_plum": 12.8,
+    "paper_on_wine": 6.95,
+    "blush_on_wine": 4.21,
+    "deep_plum_on_paper": 12.8,
+    "moon_cream_on_deep_plum": 11.77
+  },
+  "dialogue_body_px": {
+    "1366x768": 24,
+    "960x540": 18
+  },
+  "notebook_body_px": {
+    "1366x768": 22,
+    "960x540": 18
+  },
+  "control_caption_min_px": 16,
+  "presentation_footer_px": 14,
+  "typography": "../branding/fonts/DejaVuSans.ttf and DejaVuSerif-Bold.ttf; license at../branding/fonts/LICENSE-DejaVu.txt",
+  "status": "Static art samples only; no runtime, keyboard interaction, scaling behavior or accessibility implementation tested."
+}

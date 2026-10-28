@@ -1,0 +1,20 @@
+{
+  "file": "MANSION_TITLE_BACKGROUND.png",
+  "classification": "AI-generated illustration concept; not native pixel tiles or runtime screenshot",
+  "native_dimensions": [
+    1672,
+    941
+  ],
+  "generator": "OpenAI ImageGen",
+  "generated_on": "2026-10-26",
+  "source_original": "exec-d7b89ae9-140a-4a94-a550-1034339d6b5f.png",
+  "treatment": "Original text-free cozy Gothic mansion, rainy street, Fig and Visitor; reserved dark left area for separate title layers.",
+  "provenance": "Generated from written brief without uploading or sampling other game artwork.",
+  "review_limitations": [
+    "Illustrative texture is not a uniform native pixel grid.",
+    "Analog clock is an illustrative near-midnight motif; exact11:59 hand angles need final production review."
+  ],
+  "status": "CONCEPT_REVIEW_REQUIRED",
+  "revision": "2: image-generated refinement for complete spire framing and near-midnight clock",
+  "generation_brief": "Original rainy Victorian mansion on right60%, quiet left40% reserved for exact-title overlay. Ink/plum, candlelight, pink moon, black cat with burgundy tie, Visitor in plum coat. No typography baked into scenery. Revision requested both hands just left of12 and margin above highest spire."
+}

@@ -1,0 +1,3 @@
+# Art authoring/export dependencies only; no game runtime.
+Pillow>=10,<14
+fonttools>=4.0,<5

@@ -1,0 +1,81 @@
+{
+  "letter": [
+    {"speaker":"The letter", "text":"Dear Occupant,\nWe regret to inform you that tomorrow has gone missing."},
+    {"speaker":"The letter", "text":"As you are the only available person, locating it has become your responsibility. Please refrain from dying during the investigation. The paperwork is tremendous."},
+    {"speaker":"The letter", "text":"Report to the house at the end of Forgotten Street. Ask for Fig.\nSincerely, the Department of Unfinished Things."},
+    {"speaker":"Visitor", "text":"There wasn't a house at the end of this street yesterday.\nThen again, apparently we aren't doing tomorrow either."}
+  ],
+  "fig_street": [
+    {"speaker":"Fig", "text":"You are three minutes late."},
+    {"speaker":"Visitor", "text":"I wasn't aware I had an appointment."},
+    {"speaker":"Fig", "text":"It's worse when they know.", "portrait":1},
+    {"speaker":"Visitor", "text":"Are you a cat wearing a tie?"},
+    {"speaker":"Fig", "text":"I'm upper management. The tie is mandatory."},
+    {"speaker":"Visitor", "text":"I received a letter about tomorrow."},
+    {"speaker":"Fig", "text":"Yes, very regrettable. We'd planned to have one.", "portrait":2},
+    {"speaker":"Fig", "text":"Come inside. The Guestbook will want a word. It likes arguments."}
+  ],
+  "mirror": [
+    {"speaker":"Visitor", "text":"The Guestbook won't accept my name."},
+    {"speaker":"Fig", "text":"Naturally. This house admits someone who might have arrived. Names are less reliable than you think."},
+    {"speaker":"Fig", "text":"Take this pocket mirror. It's not very good at showing what exists."},
+    {"speaker":"Visitor", "text":"Why would I want that?"},
+    {"speaker":"Fig", "text":"To find what nearly did. We call it The Almost. The rooms stay put; their possibilities are less well behaved."},
+    {"speaker":"Fig", "text":"Press Space to look into The Almost. You can return whenever you wish. If you get stuck, ask me—or open your notebook with N."}
+  ],
+  "book_declined": [
+    {"speaker":"Guestbook", "text":"DECLINED. YOU ARE NOT WHO YOU THINK YOU ARE."},
+    {"speaker":"Visitor", "text":"Rude."},
+    {"speaker":"Fig", "text":"Efficient, though. The book expects a kind of guest, not a name."}
+  ],
+  "book_needs_clue": [
+    {"speaker":"Guestbook", "text":"The expected guest has no written name. Find the title the house remembers."},
+    {"speaker":"Visitor", "text":"Something in this room must tell me who it expects. Perhaps something that isn't quite here."}
+  ],
+  "portrait_here": [
+    {"speaker":"Visitor", "text":"An unfinished portrait. Its brass nameplate is completely blank."},
+    {"speaker":"Visitor", "text":"Whoever sat for it seems to have left before they arrived."}
+  ],
+  "portrait_almost": [
+    {"speaker":"Visitor", "text":"There is someone in the portrait now. Not quite me. Someone who could have been."},
+    {"speaker":"The nameplate", "text":"THE VISITOR"},
+    {"speaker":"Visitor", "text":"A title, not a name. I'll write it in my notebook."}
+  ],
+  "book_accepted": [
+    {"speaker":"Guestbook", "text":"ACCEPTED. WELCOME, THE VISITOR."},
+    {"speaker":"Visitor", "text":"The chandelier just bowed to me."},
+    {"speaker":"Fig", "text":"We do try.\nYou'll do. Probably."},
+    {"speaker":"Visitor", "text":"Both doors clicked open. And a red notice just appeared on the left sideboard."}
+  ],
+  "notice": [
+    {"speaker":"Departmental notice", "text":"PROPERTY STATUS: UNFINISHED.\nCLOSURE: NEXT TOMORROW."},
+    {"speaker":"Visitor", "text":"That's not reassuring."},
+    {"speaker":"Fig", "text":"It's much more reassuring than 'last yesterday.'", "portrait":2},
+    {"speaker":"Visitor", "text":"Someone has stopped the clocks. Someone else wants to close the house. I think these might be the same problem."},
+    {"speaker":"Fig", "text":"The kitchen is through the door on the left. Mabel makes tea when she has something not to tell you."}
+  ],
+  "clock": [
+    {"speaker":"Visitor", "text":"Eleven fifty-nine. The pendulum is waiting politely for a future."},
+    {"speaker":"Visitor", "text":"A tiny label reads: PLEASE DO NOT WIND WITHOUT TOMORROW."}
+  ],
+  "books": [
+    {"speaker":"Visitor", "text":"How to Win Arguments With Dust.\nVolume II: When the Dust Has a Point."},
+    {"speaker":"Fig", "text":"An excellent volume. The first edition was defeated by a shelf."}
+  ],
+  "tea": [
+    {"speaker":"Visitor", "text":"Two cups. One warm, one full of a remarkably convincing absence."},
+    {"speaker":"Fig", "text":"We keep a place for someone who nearly stayed."}
+  ],
+  "flowers": [
+    {"speaker":"Visitor", "text":"The roses smell of rain and a birthday I almost remembered."},
+    {"speaker":"Visitor", "text":"A little card says: Everything unfinished still needs watering. — Mabel"}
+  ],
+  "street_sign": [
+    {"speaker":"Street sign", "text":"FORGOTTEN STREET\nPlease remember to leave."},
+    {"speaker":"Visitor", "text":"The name on the back has been erased. Several times."}
+  ],
+  "window": [
+    {"speaker":"Visitor", "text":"Warm windows. A kettle silhouette. Someone has drawn a curtain around an impossible amount of room."},
+    {"speaker":"Visitor", "text":"For a house that wasn't here yesterday, it looks very lived in."}
+  ]
+}

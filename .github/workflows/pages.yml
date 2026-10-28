@@ -1,0 +1,83 @@
+name: Build and deploy playable chapter
+
+'on':
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      XDG_DATA_HOME: ${{ runner.temp }}/godot-data
+      GODOT_BIN: ${{ runner.temp }}/godot/Godot_v4.6.3-stable_linux.x86_64
+      TEMPLATE_DIR: ${{ runner.temp }}/godot-data/godot/export_templates/4.6.3.stable
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Godot 4.6.3
+        run: |
+          mkdir -p "$RUNNER_TEMP/godot"
+          curl --fail --location --retry 3 --output "$RUNNER_TEMP/godot.zip" \
+            https://github.com/godotengine/godot-builds/releases/download/4.6.3-stable/Godot_v4.6.3-stable_linux.x86_64.zip
+          unzip -q "$RUNNER_TEMP/godot.zip" -d "$RUNNER_TEMP/godot"
+          echo "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3  $GODOT_BIN" | sha256sum -c -
+          chmod +x "$GODOT_BIN"
+      - name: Cache Web export template
+        id: templates
+        uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/godot-data/godot/export_templates/4.6.3.stable
+          key: godot-4.6.3-stable-web-nothreads-release-v1
+      - name: Download official export templates
+        if: steps.templates.outputs.cache-hit != 'true'
+        run: |
+          curl --fail --location --retry 3 --output "$RUNNER_TEMP/templates.tpz" \
+            https://github.com/godotengine/godot-builds/releases/download/4.6.3-stable/Godot_v4.6.3-stable_export_templates.tpz
+          mkdir -p "$TEMPLATE_DIR"
+          unzip -j -q "$RUNNER_TEMP/templates.tpz" templates/version.txt templates/web_nothreads_release.zip -d "$TEMPLATE_DIR"
+      - name: Verify export template
+        run: |
+          cd "$TEMPLATE_DIR"
+          echo '4855bd38072b77c73c45739cf6a6787d7df790a368b0a437102f352650e6186b  version.txt' | sha256sum -c -
+          echo '1446f79dc12f60ce5d244c39fb6628ec298337ca5c4f91a16491feea72aa1bc9  web_nothreads_release.zip' | sha256sum -c -
+      - name: Import and test
+        run: |
+          "$GODOT_BIN" --headless --editor --path . --import --quit
+          for test in test_state test_coordinator_regressions test_world test_slice; do
+            "$GODOT_BIN" --headless --path . --script "tests/$test.gd"
+          done
+      - name: Export Web build
+        run: |
+          mkdir -p builds/web
+          touch builds/.gdignore
+          "$GODOT_BIN" --headless --path . --export-release Web builds/web/index.html
+          rm -f builds/web/*.import
+          cp assets/LICENSE-DejaVu.txt assets/AUDIO_PROVENANCE.md builds/web/
+          test -s builds/web/index.html
+          test -s builds/web/index.wasm
+          test -s builds/web/index.pck
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: builds/web
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

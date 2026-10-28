@@ -1,0 +1,38 @@
+{
+  "asset": "title_tagline_lockup",
+  "status": "ART_REVIEW_UNAPPROVED",
+  "classification": "high-resolution editable branding, not a native pixel sprite",
+  "native_dimensions": [
+    1000,
+    90
+  ],
+  "format": "RGBA PNG + editable text SVG + portable outlined SVG",
+  "alpha": "straight alpha, antialiased edges; transparent canvas",
+  "source": "../source/draw_branding.py",
+  "filter": "smooth downsampling for typography; not nearest-neighbor pixel art",
+  "layers": [
+    "original vector ornaments",
+    "editable font-backed text"
+  ],
+  "text_lines": [
+    {
+      "text": "Tomorrow is missing.",
+      "font": "fonts/DejaVuSans.ttf",
+      "font_size": 31,
+      "baseline_y": 34,
+      "width": 330.2529,
+      "x": 334.8735
+    },
+    {
+      "text": "The cat denies everything.",
+      "font": "fonts/DejaVuSans.ttf",
+      "font_size": 31,
+      "baseline_y": 75,
+      "width": 414.8218,
+      "x": 292.5891
+    }
+  ],
+  "fonts": "fonts/; unchanged DejaVu files with LICENSE-DejaVu.txt",
+  "provenance": "Original layout and ornaments authored for this project; lettering uses licensed DejaVu typefaces. No generative text or cropped reference art.",
+  "approval": "Human approval not recorded"
+}

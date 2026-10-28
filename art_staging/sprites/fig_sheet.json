@@ -1,0 +1,97 @@
+{
+  "asset": "fig_sheet.png",
+  "native_dimensions": [
+    96,
+    24
+  ],
+  "mode": "RGBA",
+  "alpha": "binary 0 or 255; transparent pixels are (0,0,0,0)",
+  "cell_px": [
+    24,
+    24
+  ],
+  "columns": 4,
+  "rows": 1,
+  "frame_count": 4,
+  "frames": [
+    {
+      "name": "idle",
+      "cell": [
+        0,
+        0
+      ],
+      "rect_px": [
+        0,
+        0,
+        24,
+        24
+      ],
+      "duration_ms": 1600
+    },
+    {
+      "name": "blink",
+      "cell": [
+        1,
+        0
+      ],
+      "rect_px": [
+        24,
+        0,
+        24,
+        24
+      ],
+      "duration_ms": 120
+    },
+    {
+      "name": "tail",
+      "cell": [
+        2,
+        0
+      ],
+      "rect_px": [
+        48,
+        0,
+        24,
+        24
+      ],
+      "duration_ms": 250
+    },
+    {
+      "name": "talk",
+      "cell": [
+        3,
+        0
+      ],
+      "rect_px": [
+        72,
+        0,
+        24,
+        24
+      ],
+      "duration_ms": 180
+    }
+  ],
+  "foot_anchor_px": [
+    12,
+    22
+  ],
+  "coordinate_convention": "top-left; x right, y down; anchor is pixel boundary below feet",
+  "filter": "nearest",
+  "palette": "../palette.json",
+  "status": "REVIEW_REQUIRED",
+  "provenance": {
+    "creator": "Codex, original coordinate-authored pixel drawings for this project",
+    "source": "../source/draw_characters.py",
+    "external_art": "none; no reference pixels sampled",
+    "rights": "New original project artwork; no third-party sprite assets used; no blanket public license assigned."
+  },
+  "facing": "south only; no unverified directional animation advertised",
+  "suggested_idle_sequence": [
+    0,
+    0,
+    2,
+    0,
+    1,
+    0
+  ]
+}

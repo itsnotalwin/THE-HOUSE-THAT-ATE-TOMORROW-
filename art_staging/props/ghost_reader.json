@@ -1,0 +1,24 @@
+{
+  "name": "ghost_reader",
+  "native_dimensions": [
+    32,
+    48
+  ],
+  "frame_count": 1,
+  "cell_dimensions": [
+    32,
+    48
+  ],
+  "rows": 1,
+  "columns": 1,
+  "timing_ms": 0,
+  "anchor_px": [
+    16,
+    47
+  ],
+  "alpha": "RGBA binary transparency",
+  "source": "../source/draw_environment.py",
+  "provenance": "Original authored pixel art for this project",
+  "status": "REVIEW CANDIDATE",
+  "note": "2\u00d73 tiles; an unrealized reader only appears in The Almost. Opaque palette illusion, not runtime alpha effect."
+}

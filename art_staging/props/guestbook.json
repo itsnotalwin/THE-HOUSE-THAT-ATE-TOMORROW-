@@ -1,0 +1,24 @@
+{
+  "name": "guestbook",
+  "native_dimensions": [
+    32,
+    16
+  ],
+  "frame_count": 1,
+  "cell_dimensions": [
+    32,
+    16
+  ],
+  "rows": 1,
+  "columns": 1,
+  "timing_ms": 0,
+  "anchor_px": [
+    16,
+    14
+  ],
+  "alpha": "RGBA binary transparency",
+  "source": "../source/draw_environment.py",
+  "provenance": "Original authored pixel art for this project",
+  "status": "REVIEW CANDIDATE",
+  "note": "Open blank guestbook; illustrative marks are not readable words."
+}

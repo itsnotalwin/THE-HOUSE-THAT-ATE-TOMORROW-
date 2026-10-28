@@ -1,0 +1,351 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "image_decode",
+      "passed": true,
+      "files": 59
+    },
+    {
+      "check": "native_rgba_palette_alpha",
+      "passed": true,
+      "files": [
+        {
+          "path": "sprites/auditor_concept.png",
+          "size": [
+            24,
+            40
+          ],
+          "palette_colors": 11,
+          "binary_alpha": true
+        },
+        {
+          "path": "sprites/fig_concept.png",
+          "size": [
+            24,
+            24
+          ],
+          "palette_colors": 10,
+          "binary_alpha": true
+        },
+        {
+          "path": "sprites/fig_portraits.png",
+          "size": [
+            192,
+            64
+          ],
+          "palette_colors": 10,
+          "binary_alpha": true
+        },
+        {
+          "path": "sprites/fig_sheet.png",
+          "size": [
+            96,
+            24
+          ],
+          "palette_colors": 10,
+          "binary_alpha": true
+        },
+        {
+          "path": "sprites/mabel_concept.png",
+          "size": [
+            24,
+            32
+          ],
+          "palette_colors": 10,
+          "binary_alpha": true
+        },
+        {
+          "path": "sprites/miss_thimble_concept.png",
+          "size": [
+            24,
+            32
+          ],
+          "palette_colors": 7,
+          "binary_alpha": true
+        },
+        {
+          "path": "sprites/sir_crumb_concept.png",
+          "size": [
+            16,
+            24
+          ],
+          "palette_colors": 9,
+          "binary_alpha": true
+        },
+        {
+          "path": "sprites/visitor_concept.png",
+          "size": [
+            24,
+            32
+          ],
+          "palette_colors": 10,
+          "binary_alpha": true
+        },
+        {
+          "path": "sprites/visitor_sheet.png",
+          "size": [
+            120,
+            128
+          ],
+          "palette_colors": 10,
+          "binary_alpha": true
+        },
+        {
+          "path": "tiles/foyer_atlas_almost.png",
+          "size": [
+            256,
+            256
+          ],
+          "palette_colors": 8,
+          "binary_alpha": true
+        },
+        {
+          "path": "tiles/foyer_atlas_here.png",
+          "size": [
+            256,
+            256
+          ],
+          "palette_colors": 15,
+          "binary_alpha": true
+        },
+        {
+          "path": "props/ghost_reader_almost.png",
+          "size": [
+            32,
+            48
+          ],
+          "palette_colors": 4,
+          "binary_alpha": true
+        },
+        {
+          "path": "props/guestbook_almost.png",
+          "size": [
+            32,
+            16
+          ],
+          "palette_colors": 6,
+          "binary_alpha": true
+        },
+        {
+          "path": "props/guestbook_here.png",
+          "size": [
+            32,
+            16
+          ],
+          "palette_colors": 6,
+          "binary_alpha": true
+        },
+        {
+          "path": "props/nameplate_almost.png",
+          "size": [
+            32,
+            16
+          ],
+          "palette_colors": 6,
+          "binary_alpha": true
+        },
+        {
+          "path": "props/nameplate_here.png",
+          "size": [
+            32,
+            16
+          ],
+          "palette_colors": 4,
+          "binary_alpha": true
+        },
+        {
+          "path": "ui/button_disabled.png",
+          "size": [
+            48,
+            32
+          ],
+          "palette_colors": 3,
+          "binary_alpha": true
+        },
+        {
+          "path": "ui/button_focused.png",
+          "size": [
+            48,
+            32
+          ],
+          "palette_colors": 3,
+          "binary_alpha": true
+        },
+        {
+          "path": "ui/button_normal.png",
+          "size": [
+            48,
+            32
+          ],
+          "palette_colors": 3,
+          "binary_alpha": true
+        },
+        {
+          "path": "ui/dialogue_panel.png",
+          "size": [
+            48,
+            48
+          ],
+          "palette_colors": 4,
+          "binary_alpha": true
+        },
+        {
+          "path": "ui/icon_book.png",
+          "size": [
+            24,
+            24
+          ],
+          "palette_colors": 5,
+          "binary_alpha": true
+        },
+        {
+          "path": "ui/icon_focus_arrow.png",
+          "size": [
+            24,
+            24
+          ],
+          "palette_colors": 2,
+          "binary_alpha": true
+        },
+        {
+          "path": "ui/icon_gear.png",
+          "size": [
+            24,
+            24
+          ],
+          "palette_colors": 4,
+          "binary_alpha": true
+        },
+        {
+          "path": "ui/icon_home.png",
+          "size": [
+            24,
+            24
+          ],
+          "palette_colors": 6,
+          "binary_alpha": true
+        },
+        {
+          "path": "ui/icon_key.png",
+          "size": [
+            24,
+            24
+          ],
+          "palette_colors": 4,
+          "binary_alpha": true
+        },
+        {
+          "path": "ui/icon_letter.png",
+          "size": [
+            24,
+            24
+          ],
+          "palette_colors": 6,
+          "binary_alpha": true
+        },
+        {
+          "path": "ui/icon_mirror.png",
+          "size": [
+            24,
+            24
+          ],
+          "palette_colors": 6,
+          "binary_alpha": true
+        },
+        {
+          "path": "ui/icon_moon.png",
+          "size": [
+            24,
+            24
+          ],
+          "palette_colors": 3,
+          "binary_alpha": true
+        },
+        {
+          "path": "ui/icon_notebook.png",
+          "size": [
+            24,
+            24
+          ],
+          "palette_colors": 6,
+          "binary_alpha": true
+        },
+        {
+          "path": "ui/icon_sun.png",
+          "size": [
+            24,
+            24
+          ],
+          "palette_colors": 2,
+          "binary_alpha": true
+        },
+        {
+          "path": "ui/icon_tea.png",
+          "size": [
+            24,
+            24
+          ],
+          "palette_colors": 5,
+          "binary_alpha": true
+        },
+        {
+          "path": "ui/icons_sheet.png",
+          "size": [
+            240,
+            24
+          ],
+          "palette_colors": 12,
+          "binary_alpha": true
+        },
+        {
+          "path": "ui/portrait_frame.png",
+          "size": [
+            80,
+            80
+          ],
+          "palette_colors": 4,
+          "binary_alpha": true
+        }
+      ]
+    },
+    {
+      "check": "character_cell_bounds_and_walk_uniqueness",
+      "passed": true,
+      "frames_checked": 33,
+      "visitor_walk_frames": 16
+    },
+    {
+      "check": "atlas_indices_and_room_reconstruction",
+      "passed": true,
+      "objects": 32,
+      "indexed_cells": 140,
+      "rooms": 4,
+      "camera_crops": 4,
+      "mode_geometry": "one shared placement list per candidate; only spectral reader is mode-specific"
+    },
+    {
+      "check": "exact_title_tagline_and_portable_outlines",
+      "passed": true
+    },
+    {
+      "check": "manifest_paths_sources_hashes",
+      "passed": true,
+      "rows": 67
+    },
+    {
+      "check": "original_handoff_unchanged",
+      "passed": true,
+      "checksums": 21
+    }
+  ],
+  "errors": [],
+  "not_established": [
+    "human art approval",
+    "runtime import or gameplay",
+    "controller/browser usability",
+    "final art quality",
+    "commercial name clearance"
+  ],
+  "source": "../source/validate_art.py"
+}

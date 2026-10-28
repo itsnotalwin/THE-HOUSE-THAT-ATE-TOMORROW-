@@ -1,0 +1,2346 @@
+{
+  "status": "REVIEW CANDIDATE \u2014 not user approved",
+  "native_dimensions": [
+    256,
+    256
+  ],
+  "tile_size": [
+    16,
+    16
+  ],
+  "columns": 16,
+  "rows": 16,
+  "index_order": "row-major; empty cells remain transparent",
+  "alpha": "straight RGBA; alpha values 0 and 255 only",
+  "filtering": "nearest; no mipmaps; no lossy compression",
+  "padding_px": 0,
+  "source": "../source/draw_environment.py",
+  "provenance": "Original AI-assisted hand-authored pixel geometry; no external artwork reused. User-supplied palette.",
+  "here": "foyer_atlas_here.png",
+  "almost": "foyer_atlas_almost.png",
+  "objects": {
+    "floor_plank_0": {
+      "atlas_rect_px": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "size_tiles": [
+        1,
+        1
+      ],
+      "tile_indices": [
+        0
+      ],
+      "anchor_px": [
+        8,
+        15
+      ],
+      "kind": "repeat_tile",
+      "note": "Horizontal board courses continue across 16px seams."
+    },
+    "floor_plank_1": {
+      "atlas_rect_px": [
+        16,
+        0,
+        16,
+        16
+      ],
+      "size_tiles": [
+        1,
+        1
+      ],
+      "tile_indices": [
+        1
+      ],
+      "anchor_px": [
+        8,
+        15
+      ],
+      "kind": "repeat_tile",
+      "note": "Horizontal board courses continue across 16px seams."
+    },
+    "wallpaper": {
+      "atlas_rect_px": [
+        32,
+        0,
+        16,
+        16
+      ],
+      "size_tiles": [
+        1,
+        1
+      ],
+      "tile_indices": [
+        2
+      ],
+      "anchor_px": [
+        8,
+        15
+      ],
+      "kind": "repeat_tile",
+      "note": "Muted diamond damask; horizontal and vertical repeat."
+    },
+    "baseboard": {
+      "atlas_rect_px": [
+        48,
+        0,
+        16,
+        16
+      ],
+      "size_tiles": [
+        1,
+        1
+      ],
+      "tile_indices": [
+        3
+      ],
+      "anchor_px": [
+        8,
+        15
+      ],
+      "kind": "repeat_tile",
+      "note": "North-wall lower timber panel, repeat horizontally."
+    },
+    "cornice": {
+      "atlas_rect_px": [
+        64,
+        0,
+        16,
+        16
+      ],
+      "size_tiles": [
+        1,
+        1
+      ],
+      "tile_indices": [
+        4
+      ],
+      "anchor_px": [
+        8,
+        15
+      ],
+      "kind": "repeat_tile",
+      "note": "North wall header trim, repeat horizontally."
+    },
+    "pillar": {
+      "atlas_rect_px": [
+        80,
+        0,
+        16,
+        16
+      ],
+      "size_tiles": [
+        1,
+        1
+      ],
+      "tile_indices": [
+        5
+      ],
+      "anchor_px": [
+        8,
+        15
+      ],
+      "kind": "repeat_tile",
+      "note": "Vertical pilaster, repeat vertically."
+    },
+    "threshold": {
+      "atlas_rect_px": [
+        96,
+        0,
+        16,
+        16
+      ],
+      "size_tiles": [
+        1,
+        1
+      ],
+      "tile_indices": [
+        6
+      ],
+      "anchor_px": [
+        8,
+        15
+      ],
+      "kind": "repeat_tile",
+      "note": ""
+    },
+    "floor_inlay": {
+      "atlas_rect_px": [
+        112,
+        0,
+        16,
+        16
+      ],
+      "size_tiles": [
+        1,
+        1
+      ],
+      "tile_indices": [
+        7
+      ],
+      "anchor_px": [
+        8,
+        15
+      ],
+      "kind": "repeat_tile",
+      "note": "Decorative border tile, not default field tile."
+    },
+    "rug_00": {
+      "atlas_rect_px": [
+        128,
+        0,
+        16,
+        16
+      ],
+      "size_tiles": [
+        1,
+        1
+      ],
+      "tile_indices": [
+        8
+      ],
+      "anchor_px": [
+        8,
+        15
+      ],
+      "kind": "nine_slice_tile",
+      "note": "Tile this row/column role; middle cell repeats."
+    },
+    "rug_01": {
+      "atlas_rect_px": [
+        144,
+        0,
+        16,
+        16
+      ],
+      "size_tiles": [
+        1,
+        1
+      ],
+      "tile_indices": [
+        9
+      ],
+      "anchor_px": [
+        8,
+        15
+      ],
+      "kind": "nine_slice_tile",
+      "note": "Tile this row/column role; middle cell repeats."
+    },
+    "rug_02": {
+      "atlas_rect_px": [
+        160,
+        0,
+        16,
+        16
+      ],
+      "size_tiles": [
+        1,
+        1
+      ],
+      "tile_indices": [
+        10
+      ],
+      "anchor_px": [
+        8,
+        15
+      ],
+      "kind": "nine_slice_tile",
+      "note": "Tile this row/column role; middle cell repeats."
+    },
+    "rug_10": {
+      "atlas_rect_px": [
+        176,
+        0,
+        16,
+        16
+      ],
+      "size_tiles": [
+        1,
+        1
+      ],
+      "tile_indices": [
+        11
+      ],
+      "anchor_px": [
+        8,
+        15
+      ],
+      "kind": "nine_slice_tile",
+      "note": "Tile this row/column role; middle cell repeats."
+    },
+    "rug_11": {
+      "atlas_rect_px": [
+        192,
+        0,
+        16,
+        16
+      ],
+      "size_tiles": [
+        1,
+        1
+      ],
+      "tile_indices": [
+        12
+      ],
+      "anchor_px": [
+        8,
+        15
+      ],
+      "kind": "nine_slice_tile",
+      "note": "Tile this row/column role; middle cell repeats."
+    },
+    "rug_12": {
+      "atlas_rect_px": [
+        208,
+        0,
+        16,
+        16
+      ],
+      "size_tiles": [
+        1,
+        1
+      ],
+      "tile_indices": [
+        13
+      ],
+      "anchor_px": [
+        8,
+        15
+      ],
+      "kind": "nine_slice_tile",
+      "note": "Tile this row/column role; middle cell repeats."
+    },
+    "rug_20": {
+      "atlas_rect_px": [
+        224,
+        0,
+        16,
+        16
+      ],
+      "size_tiles": [
+        1,
+        1
+      ],
+      "tile_indices": [
+        14
+      ],
+      "anchor_px": [
+        8,
+        15
+      ],
+      "kind": "nine_slice_tile",
+      "note": "Tile this row/column role; middle cell repeats."
+    },
+    "rug_21": {
+      "atlas_rect_px": [
+        240,
+        0,
+        16,
+        16
+      ],
+      "size_tiles": [
+        1,
+        1
+      ],
+      "tile_indices": [
+        15
+      ],
+      "anchor_px": [
+        8,
+        15
+      ],
+      "kind": "nine_slice_tile",
+      "note": "Tile this row/column role; middle cell repeats."
+    },
+    "rug_22": {
+      "atlas_rect_px": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "size_tiles": [
+        1,
+        1
+      ],
+      "tile_indices": [
+        16
+      ],
+      "anchor_px": [
+        8,
+        15
+      ],
+      "kind": "nine_slice_tile",
+      "note": "Tile this row/column role; middle cell repeats."
+    },
+    "door": {
+      "atlas_rect_px": [
+        16,
+        16,
+        48,
+        64
+      ],
+      "size_tiles": [
+        3,
+        4
+      ],
+      "tile_indices": [
+        17,
+        18,
+        19,
+        33,
+        34,
+        35,
+        49,
+        50,
+        51,
+        65,
+        66,
+        67
+      ],
+      "anchor_px": [
+        24,
+        62
+      ],
+      "kind": "modular_object",
+      "note": "3\u00d74 tiles; same carved arch used for both side exits."
+    },
+    "window": {
+      "atlas_rect_px": [
+        64,
+        16,
+        48,
+        80
+      ],
+      "size_tiles": [
+        3,
+        5
+      ],
+      "tile_indices": [
+        20,
+        21,
+        22,
+        36,
+        37,
+        38,
+        52,
+        53,
+        54,
+        68,
+        69,
+        70,
+        84,
+        85,
+        86
+      ],
+      "anchor_px": [
+        24,
+        79
+      ],
+      "kind": "modular_object",
+      "note": "3\u00d75 tiles. Opaque glazing; transparent outer contour."
+    },
+    "portrait": {
+      "atlas_rect_px": [
+        112,
+        16,
+        48,
+        64
+      ],
+      "size_tiles": [
+        3,
+        4
+      ],
+      "tile_indices": [
+        23,
+        24,
+        25,
+        39,
+        40,
+        41,
+        55,
+        56,
+        57,
+        71,
+        72,
+        73
+      ],
+      "anchor_px": [
+        24,
+        63
+      ],
+      "kind": "modular_object",
+      "note": "3\u00d74 tiles. Unnamed silhouette, no rasterized clue text."
+    },
+    "bookcase": {
+      "atlas_rect_px": [
+        160,
+        16,
+        64,
+        64
+      ],
+      "size_tiles": [
+        4,
+        4
+      ],
+      "tile_indices": [
+        26,
+        27,
+        28,
+        29,
+        42,
+        43,
+        44,
+        45,
+        58,
+        59,
+        60,
+        61,
+        74,
+        75,
+        76,
+        77
+      ],
+      "anchor_px": [
+        32,
+        63
+      ],
+      "kind": "modular_object",
+      "note": "4\u00d74 tiles; complete shelf contours with grouped book colors."
+    },
+    "armchair": {
+      "atlas_rect_px": [
+        224,
+        16,
+        32,
+        48
+      ],
+      "size_tiles": [
+        2,
+        3
+      ],
+      "tile_indices": [
+        30,
+        31,
+        46,
+        47,
+        62,
+        63
+      ],
+      "anchor_px": [
+        16,
+        47
+      ],
+      "kind": "modular_object",
+      "note": "2\u00d73 tiles. Sitting furniture; base anchor below feet."
+    },
+    "tea_table": {
+      "atlas_rect_px": [
+        0,
+        96,
+        48,
+        32
+      ],
+      "size_tiles": [
+        3,
+        2
+      ],
+      "tile_indices": [
+        96,
+        97,
+        98,
+        112,
+        113,
+        114
+      ],
+      "anchor_px": [
+        24,
+        31
+      ],
+      "kind": "modular_object",
+      "note": "3\u00d72 tiles with tiny cup on tabletop."
+    },
+    "lectern": {
+      "atlas_rect_px": [
+        48,
+        96,
+        32,
+        48
+      ],
+      "size_tiles": [
+        2,
+        3
+      ],
+      "tile_indices": [
+        99,
+        100,
+        115,
+        116,
+        131,
+        132
+      ],
+      "anchor_px": [
+        16,
+        47
+      ],
+      "kind": "modular_object",
+      "note": "2\u00d73 tiles, book exported independently for Here/Almost substitution."
+    },
+    "guestbook": {
+      "atlas_rect_px": [
+        80,
+        96,
+        32,
+        16
+      ],
+      "size_tiles": [
+        2,
+        1
+      ],
+      "tile_indices": [
+        101,
+        102
+      ],
+      "anchor_px": [
+        16,
+        14
+      ],
+      "kind": "prop",
+      "note": "Open blank guestbook; illustrative marks are not readable words."
+    },
+    "nameplate": {
+      "atlas_rect_px": [
+        112,
+        96,
+        32,
+        16
+      ],
+      "size_tiles": [
+        2,
+        1
+      ],
+      "tile_indices": [
+        103,
+        104
+      ],
+      "anchor_px": [
+        16,
+        13
+      ],
+      "kind": "prop",
+      "note": "Both states remain blank; clue text belongs in a later readable UI layer."
+    },
+    "chandelier": {
+      "atlas_rect_px": [
+        144,
+        96,
+        64,
+        48
+      ],
+      "size_tiles": [
+        4,
+        3
+      ],
+      "tile_indices": [
+        105,
+        106,
+        107,
+        108,
+        121,
+        122,
+        123,
+        124,
+        137,
+        138,
+        139,
+        140
+      ],
+      "anchor_px": [
+        32,
+        0
+      ],
+      "kind": "modular_object",
+      "note": "4\u00d73 tiles; hanging art layer only, no collision assumptions."
+    },
+    "rose_planter": {
+      "atlas_rect_px": [
+        208,
+        96,
+        32,
+        48
+      ],
+      "size_tiles": [
+        2,
+        3
+      ],
+      "tile_indices": [
+        109,
+        110,
+        125,
+        126,
+        141,
+        142
+      ],
+      "anchor_px": [
+        16,
+        47
+      ],
+      "kind": "modular_object",
+      "note": "2\u00d73 tiles; chunky rose clusters, no random texture."
+    },
+    "clock": {
+      "atlas_rect_px": [
+        0,
+        144,
+        32,
+        64
+      ],
+      "size_tiles": [
+        2,
+        4
+      ],
+      "tile_indices": [
+        144,
+        145,
+        160,
+        161,
+        176,
+        177,
+        192,
+        193
+      ],
+      "anchor_px": [
+        16,
+        63
+      ],
+      "kind": "modular_object",
+      "note": "2\u00d74 tiles. Hands cluster just before midnight (11:59), art only."
+    },
+    "sideboard": {
+      "atlas_rect_px": [
+        32,
+        144,
+        64,
+        48
+      ],
+      "size_tiles": [
+        4,
+        3
+      ],
+      "tile_indices": [
+        146,
+        147,
+        148,
+        149,
+        162,
+        163,
+        164,
+        165,
+        178,
+        179,
+        180,
+        181
+      ],
+      "anchor_px": [
+        32,
+        47
+      ],
+      "kind": "modular_object",
+      "note": "4\u00d73 tiles; papers and in-tray support bureaucratic house identity."
+    },
+    "candle": {
+      "atlas_rect_px": [
+        96,
+        144,
+        16,
+        32
+      ],
+      "size_tiles": [
+        1,
+        2
+      ],
+      "tile_indices": [
+        150,
+        166
+      ],
+      "anchor_px": [
+        8,
+        31
+      ],
+      "kind": "modular_object",
+      "note": "1\u00d72 tiles, static flame sample."
+    },
+    "ghost_reader": {
+      "atlas_rect_px": [
+        112,
+        144,
+        32,
+        48
+      ],
+      "size_tiles": [
+        2,
+        3
+      ],
+      "tile_indices": [
+        151,
+        152,
+        167,
+        168,
+        183,
+        184
+      ],
+      "anchor_px": [
+        16,
+        47
+      ],
+      "kind": "almost_overlay",
+      "note": "2\u00d73 tiles; an unrealized reader only appears in The Almost. Opaque palette illusion, not runtime alpha effect."
+    }
+  },
+  "tiles": [
+    {
+      "index": 0,
+      "name": "floor_plank_0_0_0",
+      "rect_px": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "object": "floor_plank_0"
+    },
+    {
+      "index": 1,
+      "name": "floor_plank_1_0_0",
+      "rect_px": [
+        16,
+        0,
+        16,
+        16
+      ],
+      "object": "floor_plank_1"
+    },
+    {
+      "index": 2,
+      "name": "wallpaper_0_0",
+      "rect_px": [
+        32,
+        0,
+        16,
+        16
+      ],
+      "object": "wallpaper"
+    },
+    {
+      "index": 3,
+      "name": "baseboard_0_0",
+      "rect_px": [
+        48,
+        0,
+        16,
+        16
+      ],
+      "object": "baseboard"
+    },
+    {
+      "index": 4,
+      "name": "cornice_0_0",
+      "rect_px": [
+        64,
+        0,
+        16,
+        16
+      ],
+      "object": "cornice"
+    },
+    {
+      "index": 5,
+      "name": "pillar_0_0",
+      "rect_px": [
+        80,
+        0,
+        16,
+        16
+      ],
+      "object": "pillar"
+    },
+    {
+      "index": 6,
+      "name": "threshold_0_0",
+      "rect_px": [
+        96,
+        0,
+        16,
+        16
+      ],
+      "object": "threshold"
+    },
+    {
+      "index": 7,
+      "name": "floor_inlay_0_0",
+      "rect_px": [
+        112,
+        0,
+        16,
+        16
+      ],
+      "object": "floor_inlay"
+    },
+    {
+      "index": 8,
+      "name": "rug_00_0_0",
+      "rect_px": [
+        128,
+        0,
+        16,
+        16
+      ],
+      "object": "rug_00"
+    },
+    {
+      "index": 9,
+      "name": "rug_01_0_0",
+      "rect_px": [
+        144,
+        0,
+        16,
+        16
+      ],
+      "object": "rug_01"
+    },
+    {
+      "index": 10,
+      "name": "rug_02_0_0",
+      "rect_px": [
+        160,
+        0,
+        16,
+        16
+      ],
+      "object": "rug_02"
+    },
+    {
+      "index": 11,
+      "name": "rug_10_0_0",
+      "rect_px": [
+        176,
+        0,
+        16,
+        16
+      ],
+      "object": "rug_10"
+    },
+    {
+      "index": 12,
+      "name": "rug_11_0_0",
+      "rect_px": [
+        192,
+        0,
+        16,
+        16
+      ],
+      "object": "rug_11"
+    },
+    {
+      "index": 13,
+      "name": "rug_12_0_0",
+      "rect_px": [
+        208,
+        0,
+        16,
+        16
+      ],
+      "object": "rug_12"
+    },
+    {
+      "index": 14,
+      "name": "rug_20_0_0",
+      "rect_px": [
+        224,
+        0,
+        16,
+        16
+      ],
+      "object": "rug_20"
+    },
+    {
+      "index": 15,
+      "name": "rug_21_0_0",
+      "rect_px": [
+        240,
+        0,
+        16,
+        16
+      ],
+      "object": "rug_21"
+    },
+    {
+      "index": 16,
+      "name": "rug_22_0_0",
+      "rect_px": [
+        0,
+        16,
+        16,
+        16
+      ],
+      "object": "rug_22"
+    },
+    {
+      "index": 17,
+      "name": "door_0_0",
+      "rect_px": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "object": "door"
+    },
+    {
+      "index": 18,
+      "name": "door_1_0",
+      "rect_px": [
+        32,
+        16,
+        16,
+        16
+      ],
+      "object": "door"
+    },
+    {
+      "index": 19,
+      "name": "door_2_0",
+      "rect_px": [
+        48,
+        16,
+        16,
+        16
+      ],
+      "object": "door"
+    },
+    {
+      "index": 33,
+      "name": "door_0_1",
+      "rect_px": [
+        16,
+        32,
+        16,
+        16
+      ],
+      "object": "door"
+    },
+    {
+      "index": 34,
+      "name": "door_1_1",
+      "rect_px": [
+        32,
+        32,
+        16,
+        16
+      ],
+      "object": "door"
+    },
+    {
+      "index": 35,
+      "name": "door_2_1",
+      "rect_px": [
+        48,
+        32,
+        16,
+        16
+      ],
+      "object": "door"
+    },
+    {
+      "index": 49,
+      "name": "door_0_2",
+      "rect_px": [
+        16,
+        48,
+        16,
+        16
+      ],
+      "object": "door"
+    },
+    {
+      "index": 50,
+      "name": "door_1_2",
+      "rect_px": [
+        32,
+        48,
+        16,
+        16
+      ],
+      "object": "door"
+    },
+    {
+      "index": 51,
+      "name": "door_2_2",
+      "rect_px": [
+        48,
+        48,
+        16,
+        16
+      ],
+      "object": "door"
+    },
+    {
+      "index": 65,
+      "name": "door_0_3",
+      "rect_px": [
+        16,
+        64,
+        16,
+        16
+      ],
+      "object": "door"
+    },
+    {
+      "index": 66,
+      "name": "door_1_3",
+      "rect_px": [
+        32,
+        64,
+        16,
+        16
+      ],
+      "object": "door"
+    },
+    {
+      "index": 67,
+      "name": "door_2_3",
+      "rect_px": [
+        48,
+        64,
+        16,
+        16
+      ],
+      "object": "door"
+    },
+    {
+      "index": 20,
+      "name": "window_0_0",
+      "rect_px": [
+        64,
+        16,
+        16,
+        16
+      ],
+      "object": "window"
+    },
+    {
+      "index": 21,
+      "name": "window_1_0",
+      "rect_px": [
+        80,
+        16,
+        16,
+        16
+      ],
+      "object": "window"
+    },
+    {
+      "index": 22,
+      "name": "window_2_0",
+      "rect_px": [
+        96,
+        16,
+        16,
+        16
+      ],
+      "object": "window"
+    },
+    {
+      "index": 36,
+      "name": "window_0_1",
+      "rect_px": [
+        64,
+        32,
+        16,
+        16
+      ],
+      "object": "window"
+    },
+    {
+      "index": 37,
+      "name": "window_1_1",
+      "rect_px": [
+        80,
+        32,
+        16,
+        16
+      ],
+      "object": "window"
+    },
+    {
+      "index": 38,
+      "name": "window_2_1",
+      "rect_px": [
+        96,
+        32,
+        16,
+        16
+      ],
+      "object": "window"
+    },
+    {
+      "index": 52,
+      "name": "window_0_2",
+      "rect_px": [
+        64,
+        48,
+        16,
+        16
+      ],
+      "object": "window"
+    },
+    {
+      "index": 53,
+      "name": "window_1_2",
+      "rect_px": [
+        80,
+        48,
+        16,
+        16
+      ],
+      "object": "window"
+    },
+    {
+      "index": 54,
+      "name": "window_2_2",
+      "rect_px": [
+        96,
+        48,
+        16,
+        16
+      ],
+      "object": "window"
+    },
+    {
+      "index": 68,
+      "name": "window_0_3",
+      "rect_px": [
+        64,
+        64,
+        16,
+        16
+      ],
+      "object": "window"
+    },
+    {
+      "index": 69,
+      "name": "window_1_3",
+      "rect_px": [
+        80,
+        64,
+        16,
+        16
+      ],
+      "object": "window"
+    },
+    {
+      "index": 70,
+      "name": "window_2_3",
+      "rect_px": [
+        96,
+        64,
+        16,
+        16
+      ],
+      "object": "window"
+    },
+    {
+      "index": 84,
+      "name": "window_0_4",
+      "rect_px": [
+        64,
+        80,
+        16,
+        16
+      ],
+      "object": "window"
+    },
+    {
+      "index": 85,
+      "name": "window_1_4",
+      "rect_px": [
+        80,
+        80,
+        16,
+        16
+      ],
+      "object": "window"
+    },
+    {
+      "index": 86,
+      "name": "window_2_4",
+      "rect_px": [
+        96,
+        80,
+        16,
+        16
+      ],
+      "object": "window"
+    },
+    {
+      "index": 23,
+      "name": "portrait_0_0",
+      "rect_px": [
+        112,
+        16,
+        16,
+        16
+      ],
+      "object": "portrait"
+    },
+    {
+      "index": 24,
+      "name": "portrait_1_0",
+      "rect_px": [
+        128,
+        16,
+        16,
+        16
+      ],
+      "object": "portrait"
+    },
+    {
+      "index": 25,
+      "name": "portrait_2_0",
+      "rect_px": [
+        144,
+        16,
+        16,
+        16
+      ],
+      "object": "portrait"
+    },
+    {
+      "index": 39,
+      "name": "portrait_0_1",
+      "rect_px": [
+        112,
+        32,
+        16,
+        16
+      ],
+      "object": "portrait"
+    },
+    {
+      "index": 40,
+      "name": "portrait_1_1",
+      "rect_px": [
+        128,
+        32,
+        16,
+        16
+      ],
+      "object": "portrait"
+    },
+    {
+      "index": 41,
+      "name": "portrait_2_1",
+      "rect_px": [
+        144,
+        32,
+        16,
+        16
+      ],
+      "object": "portrait"
+    },
+    {
+      "index": 55,
+      "name": "portrait_0_2",
+      "rect_px": [
+        112,
+        48,
+        16,
+        16
+      ],
+      "object": "portrait"
+    },
+    {
+      "index": 56,
+      "name": "portrait_1_2",
+      "rect_px": [
+        128,
+        48,
+        16,
+        16
+      ],
+      "object": "portrait"
+    },
+    {
+      "index": 57,
+      "name": "portrait_2_2",
+      "rect_px": [
+        144,
+        48,
+        16,
+        16
+      ],
+      "object": "portrait"
+    },
+    {
+      "index": 71,
+      "name": "portrait_0_3",
+      "rect_px": [
+        112,
+        64,
+        16,
+        16
+      ],
+      "object": "portrait"
+    },
+    {
+      "index": 72,
+      "name": "portrait_1_3",
+      "rect_px": [
+        128,
+        64,
+        16,
+        16
+      ],
+      "object": "portrait"
+    },
+    {
+      "index": 73,
+      "name": "portrait_2_3",
+      "rect_px": [
+        144,
+        64,
+        16,
+        16
+      ],
+      "object": "portrait"
+    },
+    {
+      "index": 26,
+      "name": "bookcase_0_0",
+      "rect_px": [
+        160,
+        16,
+        16,
+        16
+      ],
+      "object": "bookcase"
+    },
+    {
+      "index": 27,
+      "name": "bookcase_1_0",
+      "rect_px": [
+        176,
+        16,
+        16,
+        16
+      ],
+      "object": "bookcase"
+    },
+    {
+      "index": 28,
+      "name": "bookcase_2_0",
+      "rect_px": [
+        192,
+        16,
+        16,
+        16
+      ],
+      "object": "bookcase"
+    },
+    {
+      "index": 29,
+      "name": "bookcase_3_0",
+      "rect_px": [
+        208,
+        16,
+        16,
+        16
+      ],
+      "object": "bookcase"
+    },
+    {
+      "index": 42,
+      "name": "bookcase_0_1",
+      "rect_px": [
+        160,
+        32,
+        16,
+        16
+      ],
+      "object": "bookcase"
+    },
+    {
+      "index": 43,
+      "name": "bookcase_1_1",
+      "rect_px": [
+        176,
+        32,
+        16,
+        16
+      ],
+      "object": "bookcase"
+    },
+    {
+      "index": 44,
+      "name": "bookcase_2_1",
+      "rect_px": [
+        192,
+        32,
+        16,
+        16
+      ],
+      "object": "bookcase"
+    },
+    {
+      "index": 45,
+      "name": "bookcase_3_1",
+      "rect_px": [
+        208,
+        32,
+        16,
+        16
+      ],
+      "object": "bookcase"
+    },
+    {
+      "index": 58,
+      "name": "bookcase_0_2",
+      "rect_px": [
+        160,
+        48,
+        16,
+        16
+      ],
+      "object": "bookcase"
+    },
+    {
+      "index": 59,
+      "name": "bookcase_1_2",
+      "rect_px": [
+        176,
+        48,
+        16,
+        16
+      ],
+      "object": "bookcase"
+    },
+    {
+      "index": 60,
+      "name": "bookcase_2_2",
+      "rect_px": [
+        192,
+        48,
+        16,
+        16
+      ],
+      "object": "bookcase"
+    },
+    {
+      "index": 61,
+      "name": "bookcase_3_2",
+      "rect_px": [
+        208,
+        48,
+        16,
+        16
+      ],
+      "object": "bookcase"
+    },
+    {
+      "index": 74,
+      "name": "bookcase_0_3",
+      "rect_px": [
+        160,
+        64,
+        16,
+        16
+      ],
+      "object": "bookcase"
+    },
+    {
+      "index": 75,
+      "name": "bookcase_1_3",
+      "rect_px": [
+        176,
+        64,
+        16,
+        16
+      ],
+      "object": "bookcase"
+    },
+    {
+      "index": 76,
+      "name": "bookcase_2_3",
+      "rect_px": [
+        192,
+        64,
+        16,
+        16
+      ],
+      "object": "bookcase"
+    },
+    {
+      "index": 77,
+      "name": "bookcase_3_3",
+      "rect_px": [
+        208,
+        64,
+        16,
+        16
+      ],
+      "object": "bookcase"
+    },
+    {
+      "index": 30,
+      "name": "armchair_0_0",
+      "rect_px": [
+        224,
+        16,
+        16,
+        16
+      ],
+      "object": "armchair"
+    },
+    {
+      "index": 31,
+      "name": "armchair_1_0",
+      "rect_px": [
+        240,
+        16,
+        16,
+        16
+      ],
+      "object": "armchair"
+    },
+    {
+      "index": 46,
+      "name": "armchair_0_1",
+      "rect_px": [
+        224,
+        32,
+        16,
+        16
+      ],
+      "object": "armchair"
+    },
+    {
+      "index": 47,
+      "name": "armchair_1_1",
+      "rect_px": [
+        240,
+        32,
+        16,
+        16
+      ],
+      "object": "armchair"
+    },
+    {
+      "index": 62,
+      "name": "armchair_0_2",
+      "rect_px": [
+        224,
+        48,
+        16,
+        16
+      ],
+      "object": "armchair"
+    },
+    {
+      "index": 63,
+      "name": "armchair_1_2",
+      "rect_px": [
+        240,
+        48,
+        16,
+        16
+      ],
+      "object": "armchair"
+    },
+    {
+      "index": 96,
+      "name": "tea_table_0_0",
+      "rect_px": [
+        0,
+        96,
+        16,
+        16
+      ],
+      "object": "tea_table"
+    },
+    {
+      "index": 97,
+      "name": "tea_table_1_0",
+      "rect_px": [
+        16,
+        96,
+        16,
+        16
+      ],
+      "object": "tea_table"
+    },
+    {
+      "index": 98,
+      "name": "tea_table_2_0",
+      "rect_px": [
+        32,
+        96,
+        16,
+        16
+      ],
+      "object": "tea_table"
+    },
+    {
+      "index": 112,
+      "name": "tea_table_0_1",
+      "rect_px": [
+        0,
+        112,
+        16,
+        16
+      ],
+      "object": "tea_table"
+    },
+    {
+      "index": 113,
+      "name": "tea_table_1_1",
+      "rect_px": [
+        16,
+        112,
+        16,
+        16
+      ],
+      "object": "tea_table"
+    },
+    {
+      "index": 114,
+      "name": "tea_table_2_1",
+      "rect_px": [
+        32,
+        112,
+        16,
+        16
+      ],
+      "object": "tea_table"
+    },
+    {
+      "index": 99,
+      "name": "lectern_0_0",
+      "rect_px": [
+        48,
+        96,
+        16,
+        16
+      ],
+      "object": "lectern"
+    },
+    {
+      "index": 100,
+      "name": "lectern_1_0",
+      "rect_px": [
+        64,
+        96,
+        16,
+        16
+      ],
+      "object": "lectern"
+    },
+    {
+      "index": 115,
+      "name": "lectern_0_1",
+      "rect_px": [
+        48,
+        112,
+        16,
+        16
+      ],
+      "object": "lectern"
+    },
+    {
+      "index": 116,
+      "name": "lectern_1_1",
+      "rect_px": [
+        64,
+        112,
+        16,
+        16
+      ],
+      "object": "lectern"
+    },
+    {
+      "index": 131,
+      "name": "lectern_0_2",
+      "rect_px": [
+        48,
+        128,
+        16,
+        16
+      ],
+      "object": "lectern"
+    },
+    {
+      "index": 132,
+      "name": "lectern_1_2",
+      "rect_px": [
+        64,
+        128,
+        16,
+        16
+      ],
+      "object": "lectern"
+    },
+    {
+      "index": 101,
+      "name": "guestbook_0_0",
+      "rect_px": [
+        80,
+        96,
+        16,
+        16
+      ],
+      "object": "guestbook"
+    },
+    {
+      "index": 102,
+      "name": "guestbook_1_0",
+      "rect_px": [
+        96,
+        96,
+        16,
+        16
+      ],
+      "object": "guestbook"
+    },
+    {
+      "index": 103,
+      "name": "nameplate_0_0",
+      "rect_px": [
+        112,
+        96,
+        16,
+        16
+      ],
+      "object": "nameplate"
+    },
+    {
+      "index": 104,
+      "name": "nameplate_1_0",
+      "rect_px": [
+        128,
+        96,
+        16,
+        16
+      ],
+      "object": "nameplate"
+    },
+    {
+      "index": 105,
+      "name": "chandelier_0_0",
+      "rect_px": [
+        144,
+        96,
+        16,
+        16
+      ],
+      "object": "chandelier"
+    },
+    {
+      "index": 106,
+      "name": "chandelier_1_0",
+      "rect_px": [
+        160,
+        96,
+        16,
+        16
+      ],
+      "object": "chandelier"
+    },
+    {
+      "index": 107,
+      "name": "chandelier_2_0",
+      "rect_px": [
+        176,
+        96,
+        16,
+        16
+      ],
+      "object": "chandelier"
+    },
+    {
+      "index": 108,
+      "name": "chandelier_3_0",
+      "rect_px": [
+        192,
+        96,
+        16,
+        16
+      ],
+      "object": "chandelier"
+    },
+    {
+      "index": 121,
+      "name": "chandelier_0_1",
+      "rect_px": [
+        144,
+        112,
+        16,
+        16
+      ],
+      "object": "chandelier"
+    },
+    {
+      "index": 122,
+      "name": "chandelier_1_1",
+      "rect_px": [
+        160,
+        112,
+        16,
+        16
+      ],
+      "object": "chandelier"
+    },
+    {
+      "index": 123,
+      "name": "chandelier_2_1",
+      "rect_px": [
+        176,
+        112,
+        16,
+        16
+      ],
+      "object": "chandelier"
+    },
+    {
+      "index": 124,
+      "name": "chandelier_3_1",
+      "rect_px": [
+        192,
+        112,
+        16,
+        16
+      ],
+      "object": "chandelier"
+    },
+    {
+      "index": 137,
+      "name": "chandelier_0_2",
+      "rect_px": [
+        144,
+        128,
+        16,
+        16
+      ],
+      "object": "chandelier"
+    },
+    {
+      "index": 138,
+      "name": "chandelier_1_2",
+      "rect_px": [
+        160,
+        128,
+        16,
+        16
+      ],
+      "object": "chandelier"
+    },
+    {
+      "index": 139,
+      "name": "chandelier_2_2",
+      "rect_px": [
+        176,
+        128,
+        16,
+        16
+      ],
+      "object": "chandelier"
+    },
+    {
+      "index": 140,
+      "name": "chandelier_3_2",
+      "rect_px": [
+        192,
+        128,
+        16,
+        16
+      ],
+      "object": "chandelier"
+    },
+    {
+      "index": 109,
+      "name": "rose_planter_0_0",
+      "rect_px": [
+        208,
+        96,
+        16,
+        16
+      ],
+      "object": "rose_planter"
+    },
+    {
+      "index": 110,
+      "name": "rose_planter_1_0",
+      "rect_px": [
+        224,
+        96,
+        16,
+        16
+      ],
+      "object": "rose_planter"
+    },
+    {
+      "index": 125,
+      "name": "rose_planter_0_1",
+      "rect_px": [
+        208,
+        112,
+        16,
+        16
+      ],
+      "object": "rose_planter"
+    },
+    {
+      "index": 126,
+      "name": "rose_planter_1_1",
+      "rect_px": [
+        224,
+        112,
+        16,
+        16
+      ],
+      "object": "rose_planter"
+    },
+    {
+      "index": 141,
+      "name": "rose_planter_0_2",
+      "rect_px": [
+        208,
+        128,
+        16,
+        16
+      ],
+      "object": "rose_planter"
+    },
+    {
+      "index": 142,
+      "name": "rose_planter_1_2",
+      "rect_px": [
+        224,
+        128,
+        16,
+        16
+      ],
+      "object": "rose_planter"
+    },
+    {
+      "index": 144,
+      "name": "clock_0_0",
+      "rect_px": [
+        0,
+        144,
+        16,
+        16
+      ],
+      "object": "clock"
+    },
+    {
+      "index": 145,
+      "name": "clock_1_0",
+      "rect_px": [
+        16,
+        144,
+        16,
+        16
+      ],
+      "object": "clock"
+    },
+    {
+      "index": 160,
+      "name": "clock_0_1",
+      "rect_px": [
+        0,
+        160,
+        16,
+        16
+      ],
+      "object": "clock"
+    },
+    {
+      "index": 161,
+      "name": "clock_1_1",
+      "rect_px": [
+        16,
+        160,
+        16,
+        16
+      ],
+      "object": "clock"
+    },
+    {
+      "index": 176,
+      "name": "clock_0_2",
+      "rect_px": [
+        0,
+        176,
+        16,
+        16
+      ],
+      "object": "clock"
+    },
+    {
+      "index": 177,
+      "name": "clock_1_2",
+      "rect_px": [
+        16,
+        176,
+        16,
+        16
+      ],
+      "object": "clock"
+    },
+    {
+      "index": 192,
+      "name": "clock_0_3",
+      "rect_px": [
+        0,
+        192,
+        16,
+        16
+      ],
+      "object": "clock"
+    },
+    {
+      "index": 193,
+      "name": "clock_1_3",
+      "rect_px": [
+        16,
+        192,
+        16,
+        16
+      ],
+      "object": "clock"
+    },
+    {
+      "index": 146,
+      "name": "sideboard_0_0",
+      "rect_px": [
+        32,
+        144,
+        16,
+        16
+      ],
+      "object": "sideboard"
+    },
+    {
+      "index": 147,
+      "name": "sideboard_1_0",
+      "rect_px": [
+        48,
+        144,
+        16,
+        16
+      ],
+      "object": "sideboard"
+    },
+    {
+      "index": 148,
+      "name": "sideboard_2_0",
+      "rect_px": [
+        64,
+        144,
+        16,
+        16
+      ],
+      "object": "sideboard"
+    },
+    {
+      "index": 149,
+      "name": "sideboard_3_0",
+      "rect_px": [
+        80,
+        144,
+        16,
+        16
+      ],
+      "object": "sideboard"
+    },
+    {
+      "index": 162,
+      "name": "sideboard_0_1",
+      "rect_px": [
+        32,
+        160,
+        16,
+        16
+      ],
+      "object": "sideboard"
+    },
+    {
+      "index": 163,
+      "name": "sideboard_1_1",
+      "rect_px": [
+        48,
+        160,
+        16,
+        16
+      ],
+      "object": "sideboard"
+    },
+    {
+      "index": 164,
+      "name": "sideboard_2_1",
+      "rect_px": [
+        64,
+        160,
+        16,
+        16
+      ],
+      "object": "sideboard"
+    },
+    {
+      "index": 165,
+      "name": "sideboard_3_1",
+      "rect_px": [
+        80,
+        160,
+        16,
+        16
+      ],
+      "object": "sideboard"
+    },
+    {
+      "index": 178,
+      "name": "sideboard_0_2",
+      "rect_px": [
+        32,
+        176,
+        16,
+        16
+      ],
+      "object": "sideboard"
+    },
+    {
+      "index": 179,
+      "name": "sideboard_1_2",
+      "rect_px": [
+        48,
+        176,
+        16,
+        16
+      ],
+      "object": "sideboard"
+    },
+    {
+      "index": 180,
+      "name": "sideboard_2_2",
+      "rect_px": [
+        64,
+        176,
+        16,
+        16
+      ],
+      "object": "sideboard"
+    },
+    {
+      "index": 181,
+      "name": "sideboard_3_2",
+      "rect_px": [
+        80,
+        176,
+        16,
+        16
+      ],
+      "object": "sideboard"
+    },
+    {
+      "index": 150,
+      "name": "candle_0_0",
+      "rect_px": [
+        96,
+        144,
+        16,
+        16
+      ],
+      "object": "candle"
+    },
+    {
+      "index": 166,
+      "name": "candle_0_1",
+      "rect_px": [
+        96,
+        160,
+        16,
+        16
+      ],
+      "object": "candle"
+    },
+    {
+      "index": 151,
+      "name": "ghost_reader_0_0",
+      "rect_px": [
+        112,
+        144,
+        16,
+        16
+      ],
+      "object": "ghost_reader"
+    },
+    {
+      "index": 152,
+      "name": "ghost_reader_1_0",
+      "rect_px": [
+        128,
+        144,
+        16,
+        16
+      ],
+      "object": "ghost_reader"
+    },
+    {
+      "index": 167,
+      "name": "ghost_reader_0_1",
+      "rect_px": [
+        112,
+        160,
+        16,
+        16
+      ],
+      "object": "ghost_reader"
+    },
+    {
+      "index": 168,
+      "name": "ghost_reader_1_1",
+      "rect_px": [
+        128,
+        160,
+        16,
+        16
+      ],
+      "object": "ghost_reader"
+    },
+    {
+      "index": 183,
+      "name": "ghost_reader_0_2",
+      "rect_px": [
+        112,
+        176,
+        16,
+        16
+      ],
+      "object": "ghost_reader"
+    },
+    {
+      "index": 184,
+      "name": "ghost_reader_1_2",
+      "rect_px": [
+        128,
+        176,
+        16,
+        16
+      ],
+      "object": "ghost_reader"
+    }
+  ],
+  "no_runtime_claim": "Art atlas and placement studies only; no engine import or collision test."
+}

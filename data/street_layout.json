@@ -1,0 +1,147 @@
+{
+  "room_id": "street",
+  "title": "Forgotten Street",
+  "native_dimensions": [
+    512,
+    352
+  ],
+  "background": "res://assets/street_background.png",
+  "spawn_px": [
+    256,
+    290
+  ],
+  "fig_position_px": [
+    294,
+    198
+  ],
+  "collision_rects_px": [
+    [
+      0,
+      0,
+      512,
+      182
+    ],
+    [
+      0,
+      182,
+      8,
+      170
+    ],
+    [
+      504,
+      182,
+      8,
+      170
+    ],
+    [
+      0,
+      344,
+      512,
+      8
+    ],
+    [
+      150,
+      226,
+      22,
+      14
+    ],
+    [
+      59,
+      247,
+      12,
+      12
+    ],
+    [
+      94,
+      190,
+      17,
+      15
+    ],
+    [
+      410,
+      190,
+      17,
+      15
+    ],
+    [
+      78,
+      212,
+      9,
+      10
+    ],
+    [
+      422,
+      212,
+      9,
+      10
+    ]
+  ],
+  "targets": [
+    {
+      "id": "letter",
+      "label": "Read the letter",
+      "approach_px": [
+        161,
+        254
+      ],
+      "anchor_px": [
+        161,
+        206
+      ],
+      "radius_px": 31
+    },
+    {
+      "id": "fig",
+      "label": "Talk to Fig",
+      "approach_px": [
+        294,
+        223
+      ],
+      "anchor_px": [
+        294,
+        198
+      ],
+      "radius_px": 30
+    },
+    {
+      "id": "house_door",
+      "label": "Enter the house",
+      "approach_px": [
+        256,
+        197
+      ],
+      "anchor_px": [
+        256,
+        169
+      ],
+      "radius_px": 29
+    },
+    {
+      "id": "street_sign",
+      "label": "Read the street sign",
+      "approach_px": [
+        88,
+        260
+      ],
+      "anchor_px": [
+        64,
+        227
+      ],
+      "radius_px": 28
+    },
+    {
+      "id": "window",
+      "label": "Look through the window",
+      "approach_px": [
+        366,
+        198
+      ],
+      "anchor_px": [
+        368,
+        147
+      ],
+      "radius_px": 30
+    }
+  ],
+  "provenance": "Original native street background authored by tools/draw_street.py from the approved palette and approved modular pieces. Runtime room metadata authored after ART APPROVED."
+}

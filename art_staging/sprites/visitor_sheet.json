@@ -1,0 +1,333 @@
+{
+  "asset": "visitor_sheet.png",
+  "native_dimensions": [
+    120,
+    128
+  ],
+  "mode": "RGBA",
+  "alpha": "binary 0 or 255; transparent pixels are (0,0,0,0)",
+  "cell_px": [
+    24,
+    32
+  ],
+  "columns": 5,
+  "rows": 4,
+  "frame_count": 20,
+  "frames": [
+    {
+      "name": "south_idle",
+      "cell": [
+        0,
+        0
+      ],
+      "rect_px": [
+        0,
+        0,
+        24,
+        32
+      ],
+      "duration_ms": 800
+    },
+    {
+      "name": "south_walk_0",
+      "cell": [
+        1,
+        0
+      ],
+      "rect_px": [
+        24,
+        0,
+        24,
+        32
+      ],
+      "duration_ms": 167
+    },
+    {
+      "name": "south_walk_1",
+      "cell": [
+        2,
+        0
+      ],
+      "rect_px": [
+        48,
+        0,
+        24,
+        32
+      ],
+      "duration_ms": 167
+    },
+    {
+      "name": "south_walk_2",
+      "cell": [
+        3,
+        0
+      ],
+      "rect_px": [
+        72,
+        0,
+        24,
+        32
+      ],
+      "duration_ms": 167
+    },
+    {
+      "name": "south_walk_3",
+      "cell": [
+        4,
+        0
+      ],
+      "rect_px": [
+        96,
+        0,
+        24,
+        32
+      ],
+      "duration_ms": 167
+    },
+    {
+      "name": "west_idle",
+      "cell": [
+        0,
+        1
+      ],
+      "rect_px": [
+        0,
+        32,
+        24,
+        32
+      ],
+      "duration_ms": 800
+    },
+    {
+      "name": "west_walk_0",
+      "cell": [
+        1,
+        1
+      ],
+      "rect_px": [
+        24,
+        32,
+        24,
+        32
+      ],
+      "duration_ms": 167
+    },
+    {
+      "name": "west_walk_1",
+      "cell": [
+        2,
+        1
+      ],
+      "rect_px": [
+        48,
+        32,
+        24,
+        32
+      ],
+      "duration_ms": 167
+    },
+    {
+      "name": "west_walk_2",
+      "cell": [
+        3,
+        1
+      ],
+      "rect_px": [
+        72,
+        32,
+        24,
+        32
+      ],
+      "duration_ms": 167
+    },
+    {
+      "name": "west_walk_3",
+      "cell": [
+        4,
+        1
+      ],
+      "rect_px": [
+        96,
+        32,
+        24,
+        32
+      ],
+      "duration_ms": 167
+    },
+    {
+      "name": "east_idle",
+      "cell": [
+        0,
+        2
+      ],
+      "rect_px": [
+        0,
+        64,
+        24,
+        32
+      ],
+      "duration_ms": 800
+    },
+    {
+      "name": "east_walk_0",
+      "cell": [
+        1,
+        2
+      ],
+      "rect_px": [
+        24,
+        64,
+        24,
+        32
+      ],
+      "duration_ms": 167
+    },
+    {
+      "name": "east_walk_1",
+      "cell": [
+        2,
+        2
+      ],
+      "rect_px": [
+        48,
+        64,
+        24,
+        32
+      ],
+      "duration_ms": 167
+    },
+    {
+      "name": "east_walk_2",
+      "cell": [
+        3,
+        2
+      ],
+      "rect_px": [
+        72,
+        64,
+        24,
+        32
+      ],
+      "duration_ms": 167
+    },
+    {
+      "name": "east_walk_3",
+      "cell": [
+        4,
+        2
+      ],
+      "rect_px": [
+        96,
+        64,
+        24,
+        32
+      ],
+      "duration_ms": 167
+    },
+    {
+      "name": "north_idle",
+      "cell": [
+        0,
+        3
+      ],
+      "rect_px": [
+        0,
+        96,
+        24,
+        32
+      ],
+      "duration_ms": 800
+    },
+    {
+      "name": "north_walk_0",
+      "cell": [
+        1,
+        3
+      ],
+      "rect_px": [
+        24,
+        96,
+        24,
+        32
+      ],
+      "duration_ms": 167
+    },
+    {
+      "name": "north_walk_1",
+      "cell": [
+        2,
+        3
+      ],
+      "rect_px": [
+        48,
+        96,
+        24,
+        32
+      ],
+      "duration_ms": 167
+    },
+    {
+      "name": "north_walk_2",
+      "cell": [
+        3,
+        3
+      ],
+      "rect_px": [
+        72,
+        96,
+        24,
+        32
+      ],
+      "duration_ms": 167
+    },
+    {
+      "name": "north_walk_3",
+      "cell": [
+        4,
+        3
+      ],
+      "rect_px": [
+        96,
+        96,
+        24,
+        32
+      ],
+      "duration_ms": 167
+    }
+  ],
+  "foot_anchor_px": [
+    12,
+    30
+  ],
+  "coordinate_convention": "top-left; x right, y down; anchor is pixel boundary below feet",
+  "filter": "nearest",
+  "palette": "../palette.json",
+  "status": "REVIEW_REQUIRED",
+  "provenance": {
+    "creator": "Codex, original coordinate-authored pixel drawings for this project",
+    "source": "../source/draw_characters.py",
+    "external_art": "none; no reference pixels sampled",
+    "rights": "New original project artwork; no third-party sprite assets used; no blanket public license assigned."
+  },
+  "direction_order": [
+    "south",
+    "west",
+    "east",
+    "north"
+  ],
+  "column_order": [
+    "idle",
+    "walk_contact_a",
+    "walk_pass_a",
+    "walk_contact_b",
+    "walk_pass_b"
+  ],
+  "loop_walk_columns": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "animation_rate_fps": 6,
+  "facing_rule": "West/east silhouettes mirror; near/far satchel rendering is authored separately."
+}

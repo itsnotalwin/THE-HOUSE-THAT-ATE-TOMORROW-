@@ -1,0 +1,26 @@
+{
+  "asset": "button_disabled.png",
+  "native_dimensions": [
+    48,
+    32
+  ],
+  "mode": "RGBA",
+  "palette": "../palette.json",
+  "alpha": "0 or255, straight alpha",
+  "filter": "nearest",
+  "status": "ART_REVIEW_REQUIRED",
+  "source": "../source/draw_ui.py",
+  "provenance": "Original coordinate-authored UI graphics for this project; no third-party artwork sampled.",
+  "nine_slice_margins_px": {
+    "left": 8,
+    "top": 8,
+    "right": 8,
+    "bottom": 8
+  },
+  "minimum_output_px": [
+    32,
+    32
+  ],
+  "interior": "opaque; clipped outer corners transparent",
+  "text": "Separate display-resolution text, never baked in."
+}

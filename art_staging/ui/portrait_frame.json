@@ -1,0 +1,21 @@
+{
+  "asset": "portrait_frame.png",
+  "native_dimensions": [
+    80,
+    80
+  ],
+  "mode": "RGBA",
+  "palette": "../palette.json",
+  "alpha": "0 or255, straight alpha",
+  "filter": "nearest",
+  "status": "ART_REVIEW_REQUIRED",
+  "source": "../source/draw_ui.py",
+  "provenance": "Original coordinate-authored UI graphics for this project; no third-party artwork sampled.",
+  "portrait_content_rect_px": [
+    8,
+    8,
+    64,
+    64
+  ],
+  "center": "transparent"
+}

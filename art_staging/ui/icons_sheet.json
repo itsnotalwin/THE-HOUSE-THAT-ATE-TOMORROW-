@@ -1,0 +1,125 @@
+{
+  "asset": "icons_sheet.png",
+  "native_dimensions": [
+    240,
+    24
+  ],
+  "mode": "RGBA",
+  "palette": "../palette.json",
+  "alpha": "0 or255, straight alpha",
+  "filter": "nearest",
+  "status": "ART_REVIEW_REQUIRED",
+  "source": "../source/draw_ui.py",
+  "provenance": "Original coordinate-authored UI graphics for this project; no third-party artwork sampled.",
+  "cell_px": [
+    24,
+    24
+  ],
+  "rows": 1,
+  "columns": 10,
+  "frame_count": 10,
+  "frame_order": [
+    "mirror",
+    "book",
+    "key",
+    "tea",
+    "moon",
+    "letter",
+    "notebook",
+    "home",
+    "sun",
+    "gear"
+  ],
+  "frames": [
+    {
+      "name": "mirror",
+      "rect_px": [
+        0,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "name": "book",
+      "rect_px": [
+        24,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "name": "key",
+      "rect_px": [
+        48,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "name": "tea",
+      "rect_px": [
+        72,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "name": "moon",
+      "rect_px": [
+        96,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "name": "letter",
+      "rect_px": [
+        120,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "name": "notebook",
+      "rect_px": [
+        144,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "name": "home",
+      "rect_px": [
+        168,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "name": "sun",
+      "rect_px": [
+        192,
+        0,
+        24,
+        24
+      ]
+    },
+    {
+      "name": "gear",
+      "rect_px": [
+        216,
+        0,
+        24,
+        24
+      ]
+    }
+  ]
+}

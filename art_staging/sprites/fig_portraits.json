@@ -1,0 +1,72 @@
+{
+  "asset": "fig_portraits.png",
+  "native_dimensions": [
+    192,
+    64
+  ],
+  "mode": "RGBA",
+  "alpha": "binary 0 or 255; transparent pixels are (0,0,0,0)",
+  "cell_px": [
+    64,
+    64
+  ],
+  "columns": 3,
+  "rows": 1,
+  "frame_count": 3,
+  "frames": [
+    {
+      "name": "neutral",
+      "cell": [
+        0,
+        0
+      ],
+      "rect_px": [
+        0,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "name": "denial",
+      "cell": [
+        1,
+        0
+      ],
+      "rect_px": [
+        64,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "name": "concerned",
+      "cell": [
+        2,
+        0
+      ],
+      "rect_px": [
+        128,
+        0,
+        64,
+        64
+      ]
+    }
+  ],
+  "foot_anchor_px": [
+    32,
+    62
+  ],
+  "coordinate_convention": "top-left; x right, y down; anchor is pixel boundary below feet",
+  "filter": "nearest",
+  "palette": "../palette.json",
+  "status": "REVIEW_REQUIRED",
+  "provenance": {
+    "creator": "Codex, original coordinate-authored pixel drawings for this project",
+    "source": "../source/draw_characters.py",
+    "external_art": "none; no reference pixels sampled",
+    "rights": "New original project artwork; no third-party sprite assets used; no blanket public license assigned."
+  },
+  "anchor_role": "portrait bottom center; not a world foot position"
+}

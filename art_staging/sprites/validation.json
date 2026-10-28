@@ -1,0 +1,131 @@
+{
+  "checks": "RGBA; binary alpha; exact palette; native sheet geometry; empty frame borders; four distinct walk states per direction",
+  "results": [
+    {
+      "path": "auditor_concept.png",
+      "size": [
+        24,
+        40
+      ],
+      "opaque_palette_colors": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frame_edges_clear": true,
+      "sha256": "173c42eb99092c3457aeebf819567536925b0a58cd3fae7dac85c5eae3b36a79"
+    },
+    {
+      "path": "fig_concept.png",
+      "size": [
+        24,
+        24
+      ],
+      "opaque_palette_colors": 10,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frame_edges_clear": true,
+      "sha256": "b28b0f84065fe77e79c565aed3779ed59ef8014be503810168a000e3010f29e8"
+    },
+    {
+      "path": "fig_portraits.png",
+      "size": [
+        192,
+        64
+      ],
+      "opaque_palette_colors": 10,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frame_edges_clear": true,
+      "sha256": "95ffe206b5aa7062bac8aa466bf760d1374bd6114b7a212a6877edfb181ad172"
+    },
+    {
+      "path": "fig_sheet.png",
+      "size": [
+        96,
+        24
+      ],
+      "opaque_palette_colors": 10,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frame_edges_clear": true,
+      "sha256": "ad5d69098fdfde37417dedbecfcb958ca368d1c67ff7387ec420c563aa01c141"
+    },
+    {
+      "path": "mabel_concept.png",
+      "size": [
+        24,
+        32
+      ],
+      "opaque_palette_colors": 10,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frame_edges_clear": true,
+      "sha256": "1d8b970cbef4a3fd53955fd4c79f83367cc41791b3873ed1c2a135f4ccf864a4"
+    },
+    {
+      "path": "miss_thimble_concept.png",
+      "size": [
+        24,
+        32
+      ],
+      "opaque_palette_colors": 7,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frame_edges_clear": true,
+      "sha256": "548705f2d6afb8fcd8ddbdaa39daa8e4aab45623b4bfb26e40a344b13ce07141"
+    },
+    {
+      "path": "sir_crumb_concept.png",
+      "size": [
+        16,
+        24
+      ],
+      "opaque_palette_colors": 9,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frame_edges_clear": true,
+      "sha256": "0ca3b0c10147f5b44f9ae710c285a5ee9064a33cd9e607ddec05892c02cca3cc"
+    },
+    {
+      "path": "visitor_concept.png",
+      "size": [
+        24,
+        32
+      ],
+      "opaque_palette_colors": 10,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frame_edges_clear": true,
+      "sha256": "bbf96bb0c2fc294377cc50d687589582419c8fcd1c74c904848d52251c025fd6"
+    },
+    {
+      "path": "visitor_sheet.png",
+      "size": [
+        120,
+        128
+      ],
+      "opaque_palette_colors": 10,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "frame_edges_clear": true,
+      "sha256": "93aea858ae17f71320728196a7fe434a300ce62083d61a1531475598e40384a5"
+    }
+  ]
+}

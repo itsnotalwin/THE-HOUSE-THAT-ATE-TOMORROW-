@@ -1,0 +1,20 @@
+{
+  "classification": "Static layered art mockup, not runtime UI",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "layers": [
+    "../concept/MANSION_TITLE_BACKGROUND.png",
+    "../branding/title_wordmark_outlined.svg",
+    "../branding/title_tagline_lockup_outlined.svg",
+    "editable menu labels"
+  ],
+  "source": "../source/build_review.py",
+  "title": "The House That Ate Tomorrow",
+  "tagline": "Tomorrow is missing. The cat denies everything.",
+  "tagline_effective_font_px": 20.15,
+  "body_font_px": 22,
+  "status": "REVIEW_REQUIRED",
+  "svg_note": "SVG preserves editable composition; small font-rasterization differences from PNG are expected."
+}

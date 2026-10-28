@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img" aria-label="The House That Ate Tomorrow">
+<title>The House That Ate Tomorrow</title>
+<style>@font-face {font-family: "House Serif"; src: url("fonts/DejaVuSerif-Bold.ttf");} @font-face {font-family: "House Sans"; src: url("fonts/DejaVuSans.ttf");}</style>
+<ellipse cx="500.0" cy="30.0" rx="16.0" ry="16.0" fill="#25152E" stroke="#F6B56B" stroke-width="2"/>
+<ellipse cx="500.0" cy="30.0" rx="12.0" ry="12.0" fill="none" stroke="#EF93B4" stroke-width="0.9"/>
+<polyline points="500,30 499,19" fill="none" stroke="#F4DBB9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="500,30 499,22" fill="none" stroke="#F4DBB9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="500.0" cy="30.0" rx="2.0" ry="2.0" fill="#F6B56B" stroke="none" stroke-width="2"/>
+<polyline points="500.0,19.0 500.0,17.0" fill="none" stroke="#F6B56B" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="511.0,30.0 513.0,30.0" fill="none" stroke="#F6B56B" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="500.0,41.0 500.0,43.0" fill="none" stroke="#F6B56B" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="489.0,30.000000000000004 487.0,30.000000000000004" fill="none" stroke="#F6B56B" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="441,43 441,33 447,24 455,34 455,42 470,42" fill="none" stroke="#EF93B4" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="530,42 548,42 548,28 554,17 561,30 561,43" fill="none" stroke="#EF93B4" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M475,35 C421,35 403,62 322,48" fill="none" stroke="#EF93B4" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M525,35 C579,35 597,62 678,48" fill="none" stroke="#EF93B4" stroke-width="1.8" stroke-linecap="round"/>
+<polygon points="364,48 354,38 350,40 357,48" fill="#EF93B4"/>
+<polygon points="400,47 390,37 386,39 393,47" fill="#EF93B4"/>
+<polygon points="636,48 646,38 650,40 643,48" fill="#EF93B4"/>
+<polygon points="600,47 610,37 614,39 607,47" fill="#EF93B4"/>
+<text x="191.3269" y="148" font-family="House Serif" font-size="103.0000" font-kerning="none" fill="#F4DBB9" stroke="#25152E" stroke-width="4" stroke-linejoin="round" paint-order="stroke" textLength="617.3462" lengthAdjust="spacingAndGlyphs">The House</text>
+<text x="288.6582" y="243" font-family="House Serif" font-size="88.0000" font-kerning="none" fill="#F4DBB9" stroke="#25152E" stroke-width="4" stroke-linejoin="round" paint-order="stroke" textLength="422.6836" lengthAdjust="spacingAndGlyphs">That Ate</text>
+<text x="159.7925" y="354" font-family="House Serif" font-size="119.0000" font-kerning="none" fill="#EF93B4" stroke="#25152E" stroke-width="4" stroke-linejoin="round" paint-order="stroke" textLength="680.4150" lengthAdjust="spacingAndGlyphs">Tomorrow</text>
+<path d="M230,207 C172,197 148,231 107,212" fill="none" stroke="#EF93B4" stroke-width="2" stroke-linecap="round"/>
+<ellipse cx="107.0" cy="212.0" rx="3.0" ry="3.0" fill="#F6B56B" stroke="none" stroke-width="2"/>
+<path d="M770,207 C828,197 852,231 893,212" fill="none" stroke="#EF93B4" stroke-width="2" stroke-linecap="round"/>
+<ellipse cx="893.0" cy="212.0" rx="3.0" ry="3.0" fill="#F6B56B" stroke="none" stroke-width="2"/>
+<path d="M110,365 C173,412 354,377 461,390" fill="none" stroke="#EF93B4" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M539,390 C646,377 827,412 890,365" fill="none" stroke="#EF93B4" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M156,385 C112,392 117,367 132,370" fill="none" stroke="#EF93B4" stroke-width="1.7" stroke-linecap="round"/>
+<path d="M844,385 C888,392 883,367 868,370" fill="none" stroke="#EF93B4" stroke-width="1.7" stroke-linecap="round"/>
+<ellipse cx="500.0" cy="390.5" rx="11.0" ry="12.5" fill="#F4DBB9" stroke="none" stroke-width="2"/>
+<polygon points="490,382 490,369 497,375 504,375 511,369 511,383" fill="#F4DBB9"/>
+<path d="M507,399 C531,406 533,379 521,383" fill="none" stroke="#F4DBB9" stroke-width="4" stroke-linecap="round"/>
+<polyline points="498,386 501,391 504,386" fill="none" stroke="#752C58" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="495.0" cy="381.0" rx="1.0" ry="1.0" fill="#25152E" stroke="none" stroke-width="2"/>
+<ellipse cx="505.0" cy="381.0" rx="1.0" ry="1.0" fill="#25152E" stroke="none" stroke-width="2"/>
+</svg>

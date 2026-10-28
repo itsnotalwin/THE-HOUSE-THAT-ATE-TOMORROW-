@@ -1,0 +1,92 @@
+{
+  "checks": [
+    {
+      "file": "props/ghost_reader_almost.png",
+      "dimensions": [
+        32,
+        48
+      ],
+      "rgba": true,
+      "binary_alpha": true,
+      "palette_match": true,
+      "transparent_pixels": 1042
+    },
+    {
+      "file": "props/guestbook_almost.png",
+      "dimensions": [
+        32,
+        16
+      ],
+      "rgba": true,
+      "binary_alpha": true,
+      "palette_match": true,
+      "transparent_pixels": 204
+    },
+    {
+      "file": "props/guestbook_here.png",
+      "dimensions": [
+        32,
+        16
+      ],
+      "rgba": true,
+      "binary_alpha": true,
+      "palette_match": true,
+      "transparent_pixels": 239
+    },
+    {
+      "file": "props/nameplate_almost.png",
+      "dimensions": [
+        32,
+        16
+      ],
+      "rgba": true,
+      "binary_alpha": true,
+      "palette_match": true,
+      "transparent_pixels": 184
+    },
+    {
+      "file": "props/nameplate_here.png",
+      "dimensions": [
+        32,
+        16
+      ],
+      "rgba": true,
+      "binary_alpha": true,
+      "palette_match": true,
+      "transparent_pixels": 184
+    },
+    {
+      "file": "tiles/foyer_atlas_almost.png",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgba": true,
+      "binary_alpha": true,
+      "palette_match": true,
+      "transparent_pixels": 42086
+    },
+    {
+      "file": "tiles/foyer_atlas_here.png",
+      "dimensions": [
+        256,
+        256
+      ],
+      "rgba": true,
+      "binary_alpha": true,
+      "palette_match": true,
+      "transparent_pixels": 42121
+    }
+  ],
+  "atlas_reconstruction": "All four room exports reconstruct exactly from the shared atlas and documented static placements.",
+  "tile_grid": "All asset atlas coordinates, dimensions and tile rectangles are multiples of 16.",
+  "seams": "Repeat sample sheets inspected; plank courses and damask edges continue consistently.",
+  "not_checked": [
+    "Godot import",
+    "collision",
+    "player navigation",
+    "runtime text",
+    "puzzle functionality"
+  ],
+  "status": "Native art samples technically valid, awaiting visual approval."
+}
