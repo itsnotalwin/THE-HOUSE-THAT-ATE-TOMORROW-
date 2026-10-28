@@ -16,24 +16,24 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      XDG_DATA_HOME: ${{ runner.temp }}/godot-data
-      GODOT_BIN: ${{ runner.temp }}/godot/Godot_v4.6.3-stable_linux.x86_64
-      TEMPLATE_DIR: ${{ runner.temp }}/godot-data/godot/export_templates/4.6.3.stable
+      XDG_DATA_HOME: /tmp/house-godot-data
+      GODOT_BIN: /tmp/house-godot/Godot_v4.6.3-stable_linux.x86_64
+      TEMPLATE_DIR: /tmp/house-godot-data/godot/export_templates/4.6.3.stable
     steps:
       - uses: actions/checkout@v4
       - name: Install Godot 4.6.3
         run: |
-          mkdir -p "$RUNNER_TEMP/godot"
+          mkdir -p /tmp/house-godot
           curl --fail --location --retry 3 --output "$RUNNER_TEMP/godot.zip" \
             https://github.com/godotengine/godot-builds/releases/download/4.6.3-stable/Godot_v4.6.3-stable_linux.x86_64.zip
-          unzip -q "$RUNNER_TEMP/godot.zip" -d "$RUNNER_TEMP/godot"
+          unzip -q "$RUNNER_TEMP/godot.zip" -d /tmp/house-godot
           echo "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3  $GODOT_BIN" | sha256sum -c -
           chmod +x "$GODOT_BIN"
       - name: Cache Web export template
         id: templates
         uses: actions/cache@v4
         with:
-          path: ${{ runner.temp }}/godot-data/godot/export_templates/4.6.3.stable
+          path: /tmp/house-godot-data/godot/export_templates/4.6.3.stable
           key: godot-4.6.3-stable-web-nothreads-release-v1
       - name: Download official export templates
         if: steps.templates.outputs.cache-hit != 'true'
